@@ -668,19 +668,19 @@
             </div>
 
             <div
-              class="mb-4 p-3 bg-indigo-900/20 border border-indigo-500/30 rounded-lg flex items-start gap-3"
+              class="shortcuts-info-card mb-4 p-3 rounded-lg flex items-start gap-3"
             >
               <i
                 data-lucide="info"
-                class="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5"
+                class="shortcuts-info-icon w-5 h-5 flex-shrink-0 mt-0.5"
               ></i>
-              <p class="text-sm text-indigo-200">
+              <p class="shortcuts-info-copy text-sm">
                 <span data-i18n="settings.shortcutsInfo"
                   >Press and hold keys to set a shortcut. Changes are
                   <strong>auto-saved</strong>.</span
                 >
                 <br /><span
-                  class="text-yellow-300"
+                  class="shortcuts-warning-copy"
                   data-i18n="settings.shortcutsWarning"
                   >Warning: Avoid common browser shortcuts (Cmd/Ctrl+W,
                   Cmd/Ctrl+T, Cmd/Ctrl+N etc.) as they may not work
@@ -727,16 +727,14 @@
                   </p>
                 </div>
                 <label
-                  class="relative inline-flex items-center cursor-pointer ml-4"
+                  class="settings-switch relative inline-flex items-center cursor-pointer ml-4"
                 >
                   <input
                     type="checkbox"
                     id="full-width-toggle"
                     class="sr-only peer"
                   />
-                  <div
-                    class="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-800 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"
-                  ></div>
+                  <div class="settings-switch-track"></div>
                 </label>
               </div>
 
@@ -759,16 +757,14 @@
                   </p>
                 </div>
                 <label
-                  class="relative inline-flex items-center cursor-pointer ml-4"
+                  class="settings-switch relative inline-flex items-center cursor-pointer ml-4"
                 >
                   <input
                     type="checkbox"
                     id="compact-mode-toggle"
                     class="sr-only peer"
                   />
-                  <div
-                    class="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-800 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"
-                  ></div>
+                  <div class="settings-switch-track"></div>
                 </label>
               </div>
 

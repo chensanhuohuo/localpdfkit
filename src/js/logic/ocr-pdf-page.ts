@@ -200,7 +200,7 @@ async function updateUI() {
   if (pageState.file) {
     const fileDiv = document.createElement('div');
     fileDiv.className =
-      'flex items-center justify-between bg-gray-700 p-3 rounded-lg text-sm';
+      'flex items-center justify-between bg-gray-700 border border-gray-600 p-3 rounded-lg text-sm';
 
     const infoContainer = document.createElement('div');
     infoContainer.className = 'flex flex-col overflow-hidden';
@@ -267,7 +267,7 @@ function populateLanguageList() {
   availableEntries.forEach(function ([code, name]) {
     const label = document.createElement('label');
     label.className =
-      'flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 cursor-pointer';
+      'flex items-center gap-2 p-2 rounded-md text-gray-200 hover:bg-gray-700 cursor-pointer';
     label.dataset.search = `${name} ${code}`.toLowerCase();
 
     const checkbox = document.createElement('input');
