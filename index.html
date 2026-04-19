@@ -1,0 +1,1542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      LocalPDFKit - Free Online PDF Tools | Browser-Based PDF Toolkit
+    </title>
+    <meta
+      name="title"
+      content="LocalPDFKit - Free Online PDF Tools | Browser-Based PDF Toolkit"
+    />
+    <meta
+      name="description"
+      content="Free browser-based PDF tools for everyday document work. Merge, split, compress, convert, organize, and clean PDFs with no signup required."
+    />
+    <meta
+      name="keywords"
+      content="free pdf tools, online pdf editor, merge pdf, compress pdf, split pdf, convert pdf, pdf toolkit, privacy-first pdf, browser-based pdf tools"
+    />
+    <meta name="author" content="localpdfkit.com" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://localpdfkit.com" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://localpdfkit.com/" />
+    <meta
+      property="og:title"
+      content="LocalPDFKit - Free Online PDF Tools | Browser-Based PDF Toolkit"
+    />
+    <meta
+      property="og:description"
+      content="Free browser-based PDF toolkit for everyday document work. Merge, split, compress, convert, organize, and clean PDFs with no signup required."
+    />
+    <meta
+      property="og:image"
+      content="https://localpdfkit.com/images/og-home.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="LocalPDFKit" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://localpdfkit.com/" />
+    <meta name="twitter:title" content="LocalPDFKit - Free Online PDF Tools" />
+    <meta
+      name="twitter:description"
+      content="Free browser-based PDF tools for everyday document work. Merge, split, compress, convert, organize, and clean PDFs."
+    />
+    <meta
+      name="twitter:image"
+      content="https://localpdfkit.com/images/twitter-home.png"
+    />
+    <meta name="twitter:site" content="@LocalPDFKit" />
+    <meta name="twitter:creator" content="@LocalPDFKit" />
+
+    <!-- Mobile Web App -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="LocalPDFKit" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/images/favicon-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+
+    <link href="src/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased">
+    {{> navbar }}
+
+    <div
+      id="app"
+      class="home-page-shell min-h-screen container mx-auto p-4 md:p-8"
+    >
+      <section id="hero-section" class="lp-hero text-center py-20 relative">
+        <div class="bg-grid-pattern"></div>
+        <p class="lp-hero-eyebrow">
+          Browser-based PDF tools for everyday document work
+        </p>
+        <h1 class="text-4xl md:text-7xl font-bold text-white mb-4">
+          <span data-i18n="hero.title">The</span>
+          <span
+            class="lp-hero-pill inline-flex items-center gap-3 border-2 border-indigo-400 bg-indigo-900 text-indigo-300 px-4 py-2 rounded-full mx-2 align-middle"
+          >
+            <span data-i18n="hero.pdfToolkit">PDF Toolkit</span>
+            <i
+              data-lucide="briefcase"
+              class="w-8 h-8 md:w-12 md:h-12 transform -rotate-4"
+            ></i>
+          </span>
+          <span data-i18n="hero.builtForPrivacy">built for privacy</span
+          ><span
+            class="text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500"
+            >.</span
+          >
+        </h1>
+        <p class="lp-hero-subtitle">
+          Merge, split, compress, convert, clean, and organize PDFs with a
+          focused toolkit that runs in your browser and keeps common workflows
+          simple.
+        </p>
+        <div
+          class="flex flex-wrap justify-center items-center gap-2 sm:gap-4 mb-12 mt-12"
+        >
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-800/40 border border-gray-700/50 text-gray-400 text-sm font-medium"
+          >
+            <i data-lucide="check-circle" class="w-4 h-4 text-gray-400"></i>
+            <span data-i18n="hero.noSignups">No Signups</span>
+          </span>
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-800/40 border border-gray-700/50 text-gray-400 text-sm font-medium"
+          >
+            <i data-lucide="check-circle" class="w-4 h-4 text-gray-400"></i>
+            <span>Browser-Based</span>
+          </span>
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-800/40 border border-gray-700/50 text-gray-400 text-sm font-medium"
+          >
+            <i data-lucide="check-circle" class="w-4 h-4 text-gray-400"></i>
+            <span data-i18n="hero.worksOffline">Works Offline</span>
+          </span>
+        </div>
+
+        <div
+          class="lp-hero-actions flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href="#tools-header"
+            class="lp-primary-cta inline-flex items-center gap-3 pl-8 pr-2 py-2 rounded-full bg-gradient-to-b from-indigo-500 to-indigo-600 text-white font-semibold focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-indigo-400 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-200 transform hover:-translate-y-1"
+          >
+            <span data-i18n="hero.startUsing">Start Using Now</span>
+            <span class="bg-white text-indigo-600 rounded-full p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-4 h-4"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+          <a href="/blog" class="lp-secondary-cta"> Read PDF guides </a>
+        </div>
+
+        <div class="lp-hero-proof">
+          <div>
+            <strong>100+</strong>
+            <span>PDF tools</span>
+          </div>
+          <div>
+            <strong>No account</strong>
+            <span>Start instantly</span>
+          </div>
+          <div>
+            <strong>Browser-first</strong>
+            <span>Private by design</span>
+          </div>
+        </div>
+      </section>
+      <div class="section-divider"></div>
+
+      <section id="features-section" class="marketing-section py-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+          <span data-i18n="features.title"></span>
+          <span class="marker-slanted" data-i18n="features.bentoPdf"
+            >LocalPDFKit?</span
+          >
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <div class="flex items-center gap-4 mb-3">
+              <i
+                data-lucide="user-plus"
+                class="w-10 h-10 text-indigo-400 flex-shrink-0"
+              ></i>
+              <h3
+                class="text-xl font-bold text-white"
+                data-i18n="features.noSignup.title"
+              >
+                No Signup
+              </h3>
+            </div>
+            <p
+              class="text-gray-400 pl-14"
+              data-i18n="features.noSignup.description"
+            >
+              Start instantly, no accounts or emails.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <div class="flex items-center gap-4 mb-3">
+              <i
+                data-lucide="shield"
+                class="w-10 h-10 text-indigo-400 flex-shrink-0"
+              ></i>
+              <h3
+                class="text-xl font-bold text-white"
+                data-i18n="features.noUploads.title"
+              >
+                No Uploads
+              </h3>
+            </div>
+            <p
+              class="text-gray-400 pl-14"
+              data-i18n="features.noUploads.description"
+            >
+              Core tools are designed to process files in your browser.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <div class="flex items-center gap-4 mb-3">
+              <i
+                data-lucide="badge-dollar-sign"
+                class="w-10 h-10 text-indigo-400 flex-shrink-0"
+              ></i>
+              <h3
+                class="text-xl font-bold text-white"
+                data-i18n="features.foreverFree.title"
+              >
+                Free to Use
+              </h3>
+            </div>
+            <p
+              class="text-gray-400 pl-14"
+              data-i18n="features.foreverFree.description"
+            >
+              All tools, no trials, no paywalls.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <div class="flex items-center gap-4 mb-3">
+              <i
+                data-lucide="infinity"
+                class="w-10 h-10 text-indigo-400 flex-shrink-0"
+              ></i>
+              <h3
+                class="text-xl font-bold text-white"
+                data-i18n="features.noLimits.title"
+              >
+                Flexible Workflows
+              </h3>
+            </div>
+            <p
+              class="text-gray-400 pl-14"
+              data-i18n="features.noLimits.description"
+            >
+              Process one file or several files depending on the selected tool.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <div class="flex items-center gap-4 mb-3">
+              <i
+                data-lucide="layers"
+                class="w-10 h-10 text-indigo-400 flex-shrink-0"
+              ></i>
+              <h3
+                class="text-xl font-bold text-white"
+                data-i18n="features.batchProcessing.title"
+              >
+                Batch Processing
+              </h3>
+            </div>
+            <p
+              class="text-gray-400 pl-14"
+              data-i18n="features.batchProcessing.description"
+            >
+              Many workflows support multi-file or page-level document work.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <div class="flex items-center gap-4 mb-3">
+              <i
+                data-lucide="zap"
+                class="w-10 h-10 text-indigo-400 flex-shrink-0"
+              ></i>
+              <h3
+                class="text-xl font-bold text-white"
+                data-i18n="features.lightningFast.title"
+              >
+                Lightning Fast
+              </h3>
+            </div>
+            <p
+              class="text-gray-400 pl-14"
+              data-i18n="features.lightningFast.description"
+            >
+              Process PDFs instantly, without waiting or delays.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="marketing-section workflow-section py-20">
+        <div class="text-center mb-12">
+          <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-4">
+            Start by workflow
+          </p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
+            Choose the path that matches your PDF task
+          </h2>
+          <p class="text-gray-400 max-w-3xl mx-auto">
+            Not sure which tool to open first? Follow a workflow for sharing,
+            conversion, OCR, image export, privacy cleanup, archive, or repair.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <a
+            href="/workflows#share-a-pdf"
+            class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-indigo-500/50 hover:bg-gray-800/80 transition-all"
+          >
+            <p class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-3">
+              Share
+            </p>
+            <h3
+              class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300"
+            >
+              Prepare a PDF for email or upload
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+              Compress, remove extra pages, clean metadata, and review the file
+              before sending.
+            </p>
+          </a>
+
+          <a
+            href="/workflows#combine-and-reorder"
+            class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-indigo-500/50 hover:bg-gray-800/80 transition-all"
+          >
+            <p class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-3">
+              Organize
+            </p>
+            <h3
+              class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300"
+            >
+              Build one clean PDF from several sources
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+              Merge, split, extract, rotate, and reorder pages into a polished
+              final document.
+            </p>
+          </a>
+
+          <a
+            href="/workflows#convert-and-extract"
+            class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-indigo-500/50 hover:bg-gray-800/80 transition-all"
+          >
+            <p class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-3">
+              Convert
+            </p>
+            <h3
+              class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300"
+            >
+              Reuse text, tables, and images
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+              Convert PDFs to Word or Excel, extract text, and pull embedded
+              images from documents.
+            </p>
+          </a>
+        </div>
+
+        <div class="text-center mt-10">
+          <a
+            href="/workflows"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+          >
+            Browse All Workflows
+          </a>
+        </div>
+      </section>
+
+      <section class="marketing-section category-section py-14">
+        <div class="text-center mb-10">
+          <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-4">
+            Category hubs
+          </p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
+            Browse LocalPDFKit by category
+          </h2>
+          <p class="text-gray-400 max-w-3xl mx-auto">
+            These category pages group related tools, blog tutorials, and
+            support links so users and search engines can understand the site
+            structure more easily.
+          </p>
+        </div>
+
+        <div class="inline-link-grid max-w-5xl mx-auto">
+          <a href="/pdf-converter" class="inline-link-card">
+            <strong>PDF Converter</strong>
+            <span
+              >Find document, image, spreadsheet, and ebook conversion
+              tools.</span
+            >
+          </a>
+          <a href="/pdf-editor" class="inline-link-card">
+            <strong>PDF Editor</strong>
+            <span
+              >Open the editing, cleanup, page layout, and annotation
+              tools.</span
+            >
+          </a>
+          <a href="/pdf-security" class="inline-link-card">
+            <strong>PDF Security</strong>
+            <span
+              >Manage passwords, permissions, metadata, signatures, and
+              privacy.</span
+            >
+          </a>
+          <a href="/pdf-merge-split" class="inline-link-card">
+            <strong>Merge & Split</strong>
+            <span
+              >Organize, combine, extract, compare, and reorder PDF pages.</span
+            >
+          </a>
+          <a href="/tools" class="inline-link-card">
+            <strong>All Tools Directory</strong>
+            <span
+              >Search the full LocalPDFKit tool inventory in one place.</span
+            >
+          </a>
+          <a href="/blog" class="inline-link-card">
+            <strong>Blog Tutorials</strong>
+            <span
+              >Browse fresh how-to articles, troubleshooting notes, and PDF
+              workflow tutorials.</span
+            >
+          </a>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <div id="tools-header" class="tools-header-panel text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
+          <span data-i18n="tools.title">Get Started with</span>
+          <span class="marker-slanted ml-2" data-i18n="tools.toolsLabel">
+            Tools</span
+          >
+        </h2>
+        <p class="text-gray-400" data-i18n="tools.subtitle">
+          Click a tool to open the file uploader
+        </p>
+      </div>
+
+      <div id="grid-view">
+        <div class="mb-8 max-w-lg mx-auto">
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <i data-lucide="search" class="w-5 h-5 text-gray-400"></i>
+            </span>
+            <input
+              type="text"
+              id="search-bar"
+              class="w-full pl-10 pr-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+              placeholder="Search for a tool (e.g., 'split', 'organize'...)"
+              data-i18n-placeholder="tools.searchPlaceholder"
+            />
+            <span
+              class="absolute inset-y-0 right-0 flex items-center rounded-lg pr-2 gap-2"
+            >
+              <kbd
+                id="shortcut"
+                class="bg-gray-800 px-2.5 py-1.5 rounded-md text-xs font-semibold text-gray-300 border border-gray-700 shadow-sm"
+              ></kbd>
+              <button
+                id="open-shortcuts-btn"
+                class="p-1 hover:bg-gray-600 rounded-md text-gray-400 hover:text-white transition-colors"
+                title="Keyboard Shortcuts"
+              >
+                <i data-lucide="settings" class="w-4 h-4"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div
+          id="tool-grid"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"
+        ></div>
+      </div>
+
+      <div
+        id="tool-interface"
+        class="hidden w-full max-w-4xl mx-auto bg-gray-800 rounded-xl shadow-2xl p-6 md:p-8 border border-gray-700"
+      >
+        <button
+          id="back-to-grid"
+          class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 mb-6 font-semibold"
+        >
+          <i data-lucide="arrow-left" class="cursor-pointer"></i>
+          <span class="cursor-pointer" data-i18n="tools.backToTools">
+            Back to Tools
+          </span>
+        </button>
+        <div id="tool-content"></div>
+      </div>
+
+      <div
+        id="loader-modal"
+        class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+      >
+        <div
+          class="bg-gray-800 p-8 rounded-lg flex flex-col items-center gap-4 border border-gray-700 shadow-xl"
+        >
+          <div class="solid-spinner"></div>
+          <p
+            id="loader-text"
+            class="text-white text-lg font-medium"
+            data-i18n="loader.processing"
+          >
+            Processing...
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="alert-modal"
+        class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+      >
+        <div
+          class="bg-gray-800 max-w-sm w-full p-6 rounded-lg border border-gray-700 shadow-xl text-center"
+        >
+          <h3 id="alert-title" class="text-xl font-bold text-white mb-2">
+            Alert
+          </h3>
+          <p id="alert-message" class="text-gray-300 mb-6 whitespace-pre-line">
+            This is an alert message.
+          </p>
+          <button
+            id="alert-ok"
+            class="btn bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700"
+          >
+            OK
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="preview-modal"
+        class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40 p-4"
+      >
+        <div
+          class="bg-white text-black rounded-lg shadow-xl w-full max-w-4xl h-[90vh] flex flex-col"
+        >
+          <div class="p-4 border-b flex justify-between items-center">
+            <h3 class="text-xl font-bold">Document Preview</h3>
+            <div class="flex gap-4">
+              <button
+                id="preview-download-btn"
+                class="btn bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700"
+              >
+                Download as PDF
+              </button>
+              <button
+                id="preview-close-btn"
+                class="btn bg-gray-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-gray-700"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+          <div id="preview-content" class="p-8 overflow-y-auto flex-grow"></div>
+        </div>
+      </div>
+
+      <!-- Shortcuts Modal -->
+      <div
+        id="shortcuts-modal"
+        class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+      >
+        <div
+          class="bg-gray-800 w-full max-w-2xl rounded-xl border border-gray-700 shadow-2xl flex flex-col max-h-[80vh]"
+        >
+          <div
+            class="p-6 border-b border-gray-700 flex justify-between items-center"
+          >
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+              <i data-lucide="settings" class="w-6 h-6 text-indigo-400"></i>
+              <span data-i18n="settings.title">Settings</span>
+            </h3>
+            <button
+              id="close-shortcuts-modal"
+              class="text-gray-400 hover:text-white transition-colors"
+            >
+              <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+
+          <!-- Tabs -->
+          <div class="flex border-b border-gray-700">
+            <button
+              id="shortcuts-tab-btn"
+              class="flex-1 py-3 text-sm font-medium bg-indigo-600 text-white"
+            >
+              <i data-lucide="keyboard" class="inline-block w-4 h-4 mr-1"></i>
+              <span data-i18n="settings.shortcuts">Shortcuts</span>
+            </button>
+            <button
+              id="preferences-tab-btn"
+              class="flex-1 py-3 text-sm font-medium text-gray-300 hover:text-white"
+            >
+              <i data-lucide="sliders" class="inline-block w-4 h-4 mr-1"></i>
+              <span data-i18n="settings.preferences">Preferences</span>
+            </button>
+          </div>
+
+          <!-- Shortcuts Tab Content -->
+          <div id="shortcuts-tab-content" class="p-6 overflow-y-auto flex-grow">
+            <div class="flex justify-between items-center mb-6">
+              <div class="relative flex-grow mr-4">
+                <i
+                  data-lucide="search"
+                  class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500"
+                ></i>
+                <input
+                  type="text"
+                  id="shortcut-search"
+                  data-i18n-placeholder="settings.searchShortcuts"
+                  placeholder="Search shortcuts..."
+                  class="w-full bg-gray-900 border border-gray-700 text-white rounded-lg pl-10 pr-4 py-2 focus:ring-indigo-500 focus:border-indigo-500"
+                />
+              </div>
+            </div>
+
+            <div
+              class="mb-4 p-3 bg-indigo-900/20 border border-indigo-500/30 rounded-lg flex items-start gap-3"
+            >
+              <i
+                data-lucide="info"
+                class="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5"
+              ></i>
+              <p class="text-sm text-indigo-200">
+                <span data-i18n="settings.shortcutsInfo"
+                  >Press and hold keys to set a shortcut. Changes are
+                  <strong>auto-saved</strong>.</span
+                >
+                <br /><span
+                  class="text-yellow-300"
+                  data-i18n="settings.shortcutsWarning"
+                  >Warning: Avoid common browser shortcuts (Cmd/Ctrl+W,
+                  Cmd/Ctrl+T, Cmd/Ctrl+N etc.) as they may not work
+                  reliably.</span
+                >
+              </p>
+            </div>
+
+            <div id="shortcuts-list" class="space-y-2">
+              <!-- Shortcuts will be populated here -->
+            </div>
+          </div>
+
+          <!-- Preferences Tab Content -->
+          <div
+            id="preferences-tab-content"
+            class="hidden p-6 overflow-y-auto flex-grow"
+          >
+            <h4
+              class="text-lg font-semibold text-white mb-4"
+              data-i18n="settings.displayPreferences"
+            >
+              Display Preferences
+            </h4>
+
+            <div class="space-y-4">
+              <div
+                class="flex items-center justify-between p-4 bg-gray-900 rounded-lg border border-gray-700"
+              >
+                <div class="flex-1">
+                  <label
+                    for="full-width-toggle"
+                    class="text-sm font-medium text-gray-200 cursor-pointer"
+                    data-i18n="settings.fullWidthMode"
+                  >
+                    Full Width Mode
+                  </label>
+                  <p
+                    class="text-xs text-gray-400 mt-1"
+                    data-i18n="settings.fullWidthDescription"
+                  >
+                    Use the full screen width for all tools instead of a
+                    centered container
+                  </p>
+                </div>
+                <label
+                  class="relative inline-flex items-center cursor-pointer ml-4"
+                >
+                  <input
+                    type="checkbox"
+                    id="full-width-toggle"
+                    class="sr-only peer"
+                  />
+                  <div
+                    class="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-800 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"
+                  ></div>
+                </label>
+              </div>
+
+              <div
+                class="flex items-center justify-between p-4 bg-gray-900 rounded-lg border border-gray-700"
+              >
+                <div class="flex-1">
+                  <label
+                    for="compact-mode-toggle"
+                    class="text-sm font-medium text-gray-200 cursor-pointer"
+                    data-i18n="settings.compactMode"
+                  >
+                    Compact Mode
+                  </label>
+                  <p
+                    class="text-xs text-gray-400 mt-1"
+                    data-i18n="settings.compactModeDescription"
+                  >
+                    Display tools as a compact list instead of cards
+                  </p>
+                </div>
+                <label
+                  class="relative inline-flex items-center cursor-pointer ml-4"
+                >
+                  <input
+                    type="checkbox"
+                    id="compact-mode-toggle"
+                    class="sr-only peer"
+                  />
+                  <div
+                    class="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-800 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"
+                  ></div>
+                </label>
+              </div>
+
+              <!-- Advanced Settings Link -->
+              <a
+                href="/wasm-settings"
+                class="flex items-center justify-between p-4 bg-gray-900 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-indigo-500/50 transition-all group"
+              >
+                <div class="flex-1">
+                  <span
+                    class="text-sm font-medium text-gray-200 group-hover:text-white"
+                  >
+                    Advanced Settings
+                  </span>
+                  <p class="text-xs text-gray-400 mt-1">
+                    Configure external processing modules (PyMuPDF, Ghostscript,
+                    CoherentPDF)
+                  </p>
+                </div>
+                <i
+                  data-lucide="chevron-right"
+                  class="w-5 h-5 text-gray-500 group-hover:text-indigo-400 transition-colors"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="p-6 border-t border-gray-700 flex justify-between items-center bg-gray-850 rounded-b-xl"
+          >
+            <div id="shortcuts-tab-footer" class="flex gap-3">
+              <button
+                id="import-shortcuts-btn"
+                class="text-gray-400 hover:text-white text-sm font-medium flex items-center gap-1 transition-colors"
+              >
+                <i data-lucide="upload" class="w-4 h-4"></i>
+                <span data-i18n="settings.import">Import</span>
+              </button>
+              <button
+                id="export-shortcuts-btn"
+                class="text-gray-400 hover:text-white text-sm font-medium flex items-center gap-1 transition-colors"
+              >
+                <i data-lucide="download" class="w-4 h-4"></i>
+                <span data-i18n="settings.export">Export</span>
+              </button>
+            </div>
+            <div id="preferences-tab-footer" class="hidden w-full">
+              <p
+                class="text-xs text-gray-400 text-center"
+                data-i18n="settings.settingsAutoSaved"
+              >
+                Settings are automatically saved
+              </p>
+            </div>
+            <button
+              id="reset-shortcuts-btn"
+              class="text-red-400 hover:text-red-300 text-sm font-medium transition-colors"
+            >
+              <span data-i18n="settings.resetToDefaults"
+                >Reset to Defaults</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Warning Modal -->
+      <div
+        id="warning-modal"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden items-center justify-center p-4"
+      >
+        <div
+          class="bg-gray-800 rounded-xl border border-gray-700 shadow-2xl max-w-md w-full overflow-hidden animate-scale-in"
+        >
+          <div class="p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div
+                id="warning-icon"
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-yellow-500/10 flex-shrink-0"
+              >
+                <i
+                  data-lucide="alert-triangle"
+                  class="w-6 h-6 text-yellow-500"
+                ></i>
+              </div>
+              <div class="flex-1">
+                <h3
+                  id="warning-title"
+                  class="text-xl font-bold text-white mb-2"
+                >
+                  Warning
+                </h3>
+                <p
+                  id="warning-message"
+                  class="text-gray-300 text-sm leading-relaxed"
+                ></p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-3 p-4 bg-gray-850 border-t border-gray-700">
+            <button
+              id="warning-cancel-btn"
+              class="flex-1 px-4 py-2.5 bg-gray-700 hover:bg-gray-600 text-white rounded-lg font-medium transition-colors"
+            >
+              Cancel
+            </button>
+            <button
+              id="warning-confirm-btn"
+              class="flex-1 px-4 py-2.5 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg font-medium transition-colors"
+            >
+              Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="password-modal"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden items-center justify-center p-4"
+      >
+        <div
+          class="bg-gray-800 rounded-xl border border-gray-700 shadow-2xl max-w-md w-full overflow-hidden"
+        >
+          <div class="p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-500/10 flex-shrink-0"
+              >
+                <i data-lucide="lock" class="w-6 h-6 text-indigo-400"></i>
+              </div>
+              <div class="flex-1">
+                <h3
+                  id="password-modal-title"
+                  class="text-xl font-bold text-white mb-1"
+                >
+                  Password Required
+                </h3>
+                <p
+                  id="password-modal-filename"
+                  class="text-gray-400 text-sm truncate"
+                ></p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="relative">
+                <input
+                  type="password"
+                  id="password-modal-input"
+                  class="w-full bg-gray-700 border border-gray-600 text-gray-200 rounded-lg px-4 py-2.5 pr-10 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                  placeholder="Enter password"
+                  autocomplete="off"
+                />
+                <button
+                  id="password-modal-toggle"
+                  type="button"
+                  class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-200"
+                >
+                  <i data-lucide="eye" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <p
+                id="password-modal-error"
+                class="text-xs text-red-400 mt-2 hidden"
+              ></p>
+            </div>
+          </div>
+          <div class="flex gap-3 p-4 border-t border-gray-700">
+            <button
+              id="password-modal-cancel"
+              class="flex-1 px-4 py-2.5 bg-gray-700 hover:bg-gray-600 text-white rounded-lg font-medium transition-colors"
+            >
+              Skip
+            </button>
+            <button
+              id="password-modal-submit"
+              class="flex-1 px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors"
+            >
+              Unlock
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider hide-section mb-20 mt-10 hidden"></div>
+
+      <!-- COMPLIANCE SECTION START -->
+      <section
+        id="security-compliance-section"
+        class="py-20 hide-section hidden"
+      >
+        <div class="mb-8 text-center">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 text-balance"
+          >
+            <span data-i18n="compliance.title"></span>
+            <span class="inline-flex items-center gap-2">
+              <i
+                data-lucide="shield"
+                class="w-8 h-8 md:w-10 md:h-10 text-indigo-400 bg-indigo-900 rounded-lg p-1.5"
+              ></i>
+              <span data-i18n="compliance.weKeep">We keep</span>
+            </span>
+            <br class="hidden sm:block" />
+            <span
+              class="inline-block border-2 border-indigo-400 bg-indigo-900 text-indigo-300 px-4 py-2 rounded-full mx-2 text-2xl md:text-3xl lg:text-4xl font-bold"
+              data-i18n="compliance.yourInfoSafe"
+            >
+              your information safe
+            </span>
+            <span data-i18n="compliance.byFollowingStandards"
+              >by following global security standards.</span
+            >
+          </h2>
+        </div>
+        <div class="mb-16 text-center">
+          <span
+            class="inline-flex items-center gap-2 text-indigo-400 text-lg font-medium transition-colors"
+            data-i18n="compliance.processingLocal"
+          >
+            All the processing happens locally on your device.
+          </span>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4"
+        >
+          <!-- GDPR Compliance -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-blue-600 flex items-center justify-center mb-4"
+            >
+              <img
+                src="images/gdpr.svg"
+                alt="GDPR compliance"
+                class="w-full h-full"
+              />
+            </div>
+            <h3
+              class="text-lg md:text-xl font-bold text-white mb-3"
+              data-i18n="compliance.gdpr.title"
+            >
+              GDPR compliance
+            </h3>
+            <p
+              class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xs"
+              data-i18n="compliance.gdpr.description"
+            >
+              Protects the personal data and privacy of individuals within the
+              European Union.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-blue-600 flex items-center justify-center mb-4"
+            >
+              <img
+                src="images/ccpa.svg"
+                alt="CCPA compliance"
+                class="w-full h-full"
+              />
+            </div>
+            <h3
+              class="text-lg md:text-xl font-bold text-white mb-3"
+              data-i18n="compliance.ccpa.title"
+            >
+              CCPA compliance
+            </h3>
+            <p
+              class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xs"
+              data-i18n="compliance.ccpa.description"
+            >
+              Gives California residents rights over how their personal
+              information is collected, used, and shared.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-blue-600 flex items-center justify-center mb-4"
+            >
+              <img
+                src="images/hipaa.svg"
+                alt="HIPAA compliance"
+                class="w-full h-full"
+              />
+            </div>
+            <h3
+              class="text-lg md:text-xl font-bold text-white mb-3"
+              data-i18n="compliance.hipaa.title"
+            >
+              HIPAA compliance
+            </h3>
+            <p
+              class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xs"
+              data-i18n="compliance.hipaa.description"
+            >
+              Sets safeguards for handling sensitive health information in the
+              United States healthcare system.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPLAINCE SECTION END -->
+
+      <div class="section-divider hide-section"></div>
+
+      <section id="faq-accordion" class="space-y-4 hide-section">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-white mb-12 mt-8"
+        >
+          <span data-i18n="faq.title">Frequently Asked</span>
+          <span class="marker-slanted" data-i18n="faq.questions"
+            >Questions</span
+          >
+        </h2>
+        <!-- Existing FAQs here... -->
+        <div class="faq-item bg-gray-800 rounded-lg border border-gray-700">
+          <button
+            class="faq-question w-full flex justify-between items-center text-left p-6"
+          >
+            <span
+              class="text-lg font-semibold text-white"
+              data-i18n="faq.isFree.question"
+              >Is LocalPDFKit really free?</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="faq-icon w-6 h-6 text-gray-400 transition-transform"
+            ></i>
+          </button>
+          <div
+            class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <p class="p-6 pt-0 text-gray-400" data-i18n="faq.isFree.answer">
+              Yes, absolutely. All tools on LocalPDFKit are free to use, with no
+              sign-ups and no watermarks for core browser-based tasks. We
+              believe everyone deserves access to simple, powerful PDF tools
+              without a paywall.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-gray-800 rounded-lg border border-gray-700">
+          <button
+            class="faq-question w-full flex justify-between items-center text-left p-6"
+          >
+            <span
+              class="text-lg font-semibold text-white"
+              data-i18n="faq.areFilesSecure.question"
+              >Are my files secure? Where are they processed?</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="faq-icon w-6 h-6 text-gray-400 transition-transform"
+            ></i>
+          </button>
+          <div
+            class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <p
+              class="p-6 pt-0 text-gray-400"
+              data-i18n="faq.areFilesSecure.answer"
+            >
+              Core tools are designed to process files directly in your browser
+              (client-side), so documents do not need to be uploaded to our
+              servers for common PDF tasks.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-gray-800 rounded-lg border border-gray-700">
+          <button
+            class="faq-question w-full flex justify-between items-center text-left p-6"
+          >
+            <span
+              class="text-lg font-semibold text-white"
+              data-i18n="faq.platforms.question"
+              >Does it work on Mac, Windows, and Mobile?</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="faq-icon w-6 h-6 text-gray-400 transition-transform"
+            ></i>
+          </button>
+          <div
+            class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <p class="p-6 pt-0 text-gray-400" data-i18n="faq.platforms.answer">
+              Yes! Since LocalPDFKit runs entirely in your browser, it works on
+              any operating system with a modern web browser, including Windows,
+              macOS, Linux, iOS, and Android.
+            </p>
+          </div>
+        </div>
+
+        <!-- New FAQ: GDPR Compliance -->
+        <div class="faq-item bg-gray-800 rounded-lg border border-gray-700">
+          <button
+            class="faq-question w-full flex justify-between items-center text-left p-6"
+          >
+            <span
+              class="text-lg font-semibold text-white"
+              data-i18n="faq.gdprCompliant.question"
+              >How does LocalPDFKit handle privacy and compliance?</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="faq-icon w-6 h-6 text-gray-400 transition-transform"
+            ></i>
+          </button>
+          <div
+            class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <p
+              class="p-6 pt-0 text-gray-400"
+              data-i18n="faq.gdprCompliant.answer"
+            >
+              LocalPDFKit is designed around browser-based processing and clear
+              policy pages. Many core tools avoid uploading document contents to
+              an application server, but legal compliance can depend on your
+              location, tool choice, browser setup, and optional integrations.
+            </p>
+          </div>
+        </div>
+
+        <!-- New FAQ: Data Storage -->
+        <div class="faq-item bg-gray-800 rounded-lg border border-gray-700">
+          <button
+            class="faq-question w-full flex justify-between items-center text-left p-6"
+          >
+            <span
+              class="text-lg font-semibold text-white"
+              data-i18n="faq.dataStorage.question"
+              >Do you store or track any of my files?</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="faq-icon w-6 h-6 text-gray-400 transition-transform"
+            ></i>
+          </button>
+          <div
+            class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <p
+              class="p-6 pt-0 text-gray-400"
+              data-i18n="faq.dataStorage.answer"
+            >
+              Core file operations are designed to happen in your browser
+              session. LocalPDFKit does not intentionally store document
+              contents from browser-based tools on an application server.
+            </p>
+          </div>
+        </div>
+
+        <!-- New FAQ: Privacy -->
+        <div class="faq-item bg-gray-800 rounded-lg border border-gray-700">
+          <button
+            class="faq-question w-full flex justify-between items-center text-left p-6"
+          >
+            <span
+              class="text-lg font-semibold text-white"
+              data-i18n="faq.different.question"
+              >What makes LocalPDFKit different from other PDF tools?</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="faq-icon w-6 h-6 text-gray-400 transition-transform"
+            ></i>
+          </button>
+          <div
+            class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <p class="p-6 pt-0 text-gray-400" data-i18n="faq.different.answer">
+              Many online PDF services rely on server-side processing.
+              LocalPDFKit focuses on browser-based tools for common workflows,
+              with clear support pages that explain privacy, cookies, ads, and
+              practical limits.
+            </p>
+          </div>
+        </div>
+
+        <!-- New FAQ: Browser-Based -->
+        <div class="faq-item bg-gray-800 rounded-lg border border-gray-700">
+          <button
+            class="faq-question w-full flex justify-between items-center text-left p-6"
+          >
+            <span
+              class="text-lg font-semibold text-white"
+              data-i18n="faq.browserBased.question"
+              >How does browser-based processing keep me safe?</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="faq-icon w-6 h-6 text-gray-400 transition-transform"
+            ></i>
+          </button>
+          <div
+            class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <p
+              class="p-6 pt-0 text-gray-400"
+              data-i18n="faq.browserBased.answer"
+            >
+              Browser-based processing reduces unnecessary file transfers for
+              common PDF tasks. Users should still review outputs, browser
+              settings, optional integrations, and policy pages before relying
+              on a workflow.
+            </p>
+          </div>
+        </div>
+
+        <!-- New FAQ: Analytics -->
+        <div class="faq-item bg-gray-800 rounded-lg border border-gray-700">
+          <button
+            class="faq-question w-full flex justify-between items-center text-left p-6"
+          >
+            <span
+              class="text-lg font-semibold text-white"
+              data-i18n="faq.analytics.question"
+              >Do you use cookies or analytics to track me?</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="faq-icon w-6 h-6 text-gray-400 transition-transform"
+            ></i>
+          </button>
+          <div
+            class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <p class="p-6 pt-0 text-gray-400" data-i18n="faq.analytics.answer">
+              LocalPDFKit uses browser storage for settings such as language and
+              interface preferences. Optional analytics, consent, or advertising
+              tools may be introduced later, and any material changes should be
+              reflected in our Cookie Policy and Privacy Policy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider hide-section hidden"></div>
+
+      <section id="testimonials-section" class="py-20 hide-section hidden">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+          <span data-i18n="testimonials.title">What Our</span>
+          <span class="marker-slanted" data-i18n="testimonials.users"
+            >Users</span
+          >
+          <span data-i18n="testimonials.say">Say</span>
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+        >
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div>
+                <p class="font-bold text-white">Sarah L.</p>
+                <div class="text-yellow-400 flex items-center text-sm">
+                  鈽呪槄鈽呪槄 -
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-400">
+              "This is the tool I've been searching for! It's fast, free, and I
+              love that my confidential documents never get uploaded to some
+              random server. A lifesaver for my freelance work."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div>
+                <p class="font-bold text-white">Mark Chen</p>
+                <div class="text-yellow-400 flex items-center text-sm">
+                  鈽呪槄鈽呪槄 -
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-400">
+              "Finally, a PDF editor that just works. No ads, no sign-ups, no
+              nonsense. The merge tool is surprisingly powerful. I've already
+              bookmarked it on all my devices."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div>
+                <p class="font-bold text-white">Anonymous User A-35Z</p>
+                <div class="text-yellow-400 flex items-center text-sm">
+                  鈽呪槅鈽嗏槅 -
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-400">
+              "Terrible. It won't let me upload my files to the cloud. How is my
+              Big Data Tech Overlord supposed to know I signed a permission slip
+              for my kid's field trip? Useless for my data profile."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div>
+                <p class="font-bold text-white">Dr. Brickson</p>
+                <div class="text-yellow-400 flex items-center text-sm">
+                  鈽呪槄鈽呪槄 -
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-400">
+              "As a researcher, data privacy is paramount. LocalPDFKit's
+              client-side processing model is exactly what my institution
+              recommends. It's robust, reliable, and secure. A fantastic
+              resource."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div>
+                <p class="font-bold text-white">AdTracker Pro</p>
+                <div class="text-yellow-400 flex items-center text-sm">
+                  鈽呪槅鈽嗏槅 -
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-400">
+              "This website is broken. My ad blocker says it hasn't blocked a
+              single tracker. How am I supposed to know if a product is good if
+              it's not following me around the internet for a week? 1 star."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div>
+                <p class="font-bold text-white">Raj P.</p>
+                <div class="text-yellow-400 flex items-center text-sm">
+                  鈽呪槄鈽呪槄 -
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-400">
+              "Simple, elegant, and powerful. I needed to merge 50 reports, and
+              it handled it instantly without crashing my browser. This is what
+              a web tool should be. Highly recommended."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div id="signature-ghost" class="hidden"></div>
+
+      <!-- Scroll to Top Button -->
+      <button
+        id="scroll-to-top-btn"
+        class="fixed bottom-12 right-8 bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 translate-y-10 invisible z-40"
+        aria-label="Scroll to top"
+      >
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+      </button>
+
+      <div class="section-divider"></div>
+
+      {{> home-latest-blog }}
+    </div>
+
+    {{> footer }}
+
+    <script type="module" src="src/js/utils/lucide-init.ts"></script>
+    <script type="module" src="src/js/main.ts"></script>
+    <script type="module" src="src/js/mobileMenu.ts"></script>
+    <script type="module" src="src/js/sw-register.ts"></script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "LocalPDFKit",
+        "url": "https://localpdfkit.com",
+        "description": "Free browser-based online PDF toolkit for everyday document work. Merge, split, compress, convert, organize, and clean PDFs with no signup required.",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Any - Web Browser",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Merge PDF",
+          "Split PDF",
+          "Compress PDF",
+          "Convert PDF to Word",
+          "Convert PDF to JPG",
+          "Edit PDF",
+          "Rotate PDF",
+          "Organize PDF",
+          "PDF to Excel",
+          "Sign PDF",
+          "Encrypt PDF",
+          "Decrypt PDF"
+        ],
+        "browserRequirements": "Requires JavaScript. Requires HTML5."
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LocalPDFKit",
+        "url": "https://localpdfkit.com",
+        "logo": "https://localpdfkit.com/images/favicon.svg",
+        "description": "Privacy-first, free online PDF toolkit",
+
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "url": "https://localpdfkit.com/contact"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is LocalPDFKit really free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, absolutely. All tools on LocalPDFKit are free to use, with no sign-ups and no watermarks for core browser-based tasks. We believe everyone deserves access to simple, powerful PDF tools without a paywall."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are my files secure? Where are they processed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Core tools are designed to process files directly in your browser, so documents do not need to be uploaded to our servers for common PDF tasks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work on Mac, Windows, and Mobile?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Since LocalPDFKit runs entirely in your browser, it works on any operating system with a modern web browser, including Windows, macOS, Linux, iOS, and Android."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does LocalPDFKit handle privacy and compliance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LocalPDFKit is designed around browser-based processing and clear policy pages. Many core tools avoid uploading document contents to an application server, but legal compliance can depend on your location, tool choice, browser setup, and optional integrations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you store or track any of my files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Core file operations are designed to happen in your browser session. LocalPDFKit does not intentionally store document contents from browser-based tools on an application server."
+            }
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Privacy and Browser Processing FAQ | LocalPDFKit</title>
+    <meta
+      name="description"
+      content="Find detailed answers about browser-based PDF processing, local storage, external assets, and privacy expectations in LocalPDFKit."
+    />
+    <meta name="author" content="localpdfkit.com" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://localpdfkit.com/pdf-privacy-and-browser-processing-faq"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://localpdfkit.com/pdf-privacy-and-browser-processing-faq"
+    />
+    <meta
+      property="og:title"
+      content="PDF Privacy and Browser Processing FAQ | LocalPDFKit"
+    />
+    <meta
+      property="og:description"
+      content="Detailed answers about local processing, optional resources, storage, and privacy limits."
+    />
+    <meta
+      property="og:image"
+      content="https://localpdfkit.com/images/og-home.png"
+    />
+    <meta property="og:site_name" content="LocalPDFKit" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="PDF Privacy and Browser Processing FAQ | LocalPDFKit"
+    />
+    <meta
+      name="twitter:description"
+      content="Understand what browser-based PDF processing means and what its limits are."
+    />
+    <meta
+      name="twitter:image"
+      content="https://localpdfkit.com/images/twitter-home.png"
+    />
+    <meta name="twitter:site" content="@LocalPDFKit" />
+    <meta name="apple-mobile-web-app-title" content="LocalPDFKit" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/images/favicon-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link href="/src/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased bg-gray-900 text-gray-300">
+    {{> navbar }}
+
+    <div id="app" class="min-h-screen container mx-auto p-4 md:p-8">
+      <article class="max-w-4xl mx-auto py-16 md:py-24">
+        <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-4">
+          Extended FAQ
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          PDF Privacy and Browser Processing FAQ
+        </h1>
+        <p class="text-lg text-gray-400 leading-relaxed mb-10">
+          These answers explain what LocalPDFKit means by browser-based
+          processing, where the limits are, and what users should still review
+          before handling sensitive documents.
+        </p>
+
+        <div class="space-y-4">
+          <details
+            class="bg-gray-800 border border-gray-700 rounded-2xl p-6"
+            open
+          >
+            <summary class="text-white font-semibold cursor-pointer">
+              What does browser-based processing actually mean?
+            </summary>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              It means the main processing logic can run inside your browser
+              session on your device instead of relying on a remote application
+              server for routine document handling.
+            </p>
+          </details>
+
+          <details class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+            <summary class="text-white font-semibold cursor-pointer">
+              Does browser-based always mean zero network activity?
+            </summary>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              Not necessarily. Some features may load scripts, WebAssembly
+              modules, OCR language files, or other configured assets when they
+              are first needed.
+            </p>
+          </details>
+
+          <details class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+            <summary class="text-white font-semibold cursor-pointer">
+              What is stored in my browser?
+            </summary>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              Settings such as language choice and interface preferences may be
+              stored locally. Future consent, analytics, or advertising features
+              would also create their own browser storage when enabled.
+            </p>
+          </details>
+
+          <details class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+            <summary class="text-white font-semibold cursor-pointer">
+              Should I still review sensitive documents before sharing?
+            </summary>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              Yes. Browser processing can reduce routine uploads, but it does
+              not replace your own review process for confidential, regulated,
+              or business-critical files.
+            </p>
+          </details>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href="/privacy"
+            class="inline-flex items-center px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+            >Read Privacy Policy</a
+          >
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center px-6 py-3 rounded-full border border-gray-600 text-gray-200 font-semibold hover:border-gray-500 transition-colors"
+            >How LocalPDFKit Works</a
+          >
+        </div>
+      </article>
+    </div>
+
+    {{> footer }}
+
+    <script type="module" src="src/js/utils/lucide-init.ts"></script>
+    <script type="module" src="src/js/mobileMenu.ts"></script>
+    <script type="module" src="src/js/main.ts"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does browser-based processing actually mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The main processing logic can run inside your browser session on your device instead of relying on a remote application server for routine document handling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does browser-based always mean zero network activity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Some features may load scripts, WebAssembly modules, OCR language files, or other configured assets when they are first needed."
+            }
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

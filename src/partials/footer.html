@@ -1,0 +1,67 @@
+{{#if simpleMode}} {{> footer-simple}} {{else}}
+<footer class="mt-16 border-t-2 border-gray-700 py-8">
+  <div class="container mx-auto px-4">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 text-center md:text-left"
+    >
+      <div>
+        <div class="flex items-center justify-center md:justify-start mb-4">
+          <img
+            id="footer-logo"
+            src="{{baseUrl}}{{#if brandLogo}}{{brandLogo}}{{else}}images/favicon.svg{{/if}}"
+            alt="{{#if brandName}}{{brandName}}{{else}}LocalPDFKit{{/if}} Logo"
+            class="h-10 w-10 mr-3"
+          />
+          <span id="footer-brand" class="text-xl font-bold text-white"
+            >{{#if brandName}}{{brandName}}{{else}}LocalPDFKit{{/if}}</span
+          >
+        </div>
+        <p
+          id="footer-copyright"
+          class="text-gray-400 text-sm"
+          {{#unless footerText}}data-i18n="footer.copyright"{{/unless}}
+        >
+          {{#if footerText}}{{footerText}}{{else}}&copy; 2026 LocalPDFKit. All
+          rights reserved.{{/if}}
+        </p>
+        <p class="text-gray-400 text-sm leading-relaxed mt-3">
+          Browser-based PDF tools and practical English tutorials for everyday
+          document work.
+        </p>
+        <p class="text-gray-500 text-xs mt-2">
+          <span data-i18n="footer.version">Version</span>
+          <span id="app-version">{{appVersion}}</span>
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white mb-4">Explore</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="/tools" class="hover:text-indigo-400">All Tools</a></li>
+          <li><a href="/blog" class="hover:text-indigo-400">Blog</a></li>
+          <li><a href="/workflows" class="hover:text-indigo-400">Workflows</a></li>
+          <li><a href="/faq" class="hover:text-indigo-400">FAQ</a></li>
+          <li><a href="/about" class="hover:text-indigo-400">About</a></li>
+          <li><a href="/contact" class="hover:text-indigo-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white mb-4">Legal</h3>
+        <ul class="space-y-2 text-gray-400 mb-4">
+          <li><a href="/privacy" class="hover:text-indigo-400">Privacy Policy</a></li>
+          <li><a href="/terms" class="hover:text-indigo-400">Terms and Conditions</a></li>
+          <li><a href="/cookies" class="hover:text-indigo-400">Cookie Policy</a></li>
+          <li><a href="/disclaimer" class="hover:text-indigo-400">Disclaimer</a></li>
+          <li><a href="/source-code" class="hover:text-indigo-400">Source Code</a></li>
+        </ul>
+        <a
+          href="mailto:contact@localpdfkit.com"
+          class="text-indigo-400 text-sm hover:underline"
+          >contact@localpdfkit.com</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+{{/if}}

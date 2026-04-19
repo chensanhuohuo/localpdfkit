@@ -1,0 +1,149 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Recover a Damaged PDF | LocalPDFKit</title>
+    <meta
+      name="description"
+      content="Learn how to recover a damaged PDF, what signs of corruption to look for, and how to review repaired output safely."
+    />
+    <meta name="author" content="localpdfkit.com" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://localpdfkit.com/how-to-recover-a-damaged-pdf"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://localpdfkit.com/how-to-recover-a-damaged-pdf"
+    />
+    <meta
+      property="og:title"
+      content="How to Recover a Damaged PDF | LocalPDFKit"
+    />
+    <meta
+      property="og:description"
+      content="A practical guide to damaged PDF recovery, common failure symptoms, and output review."
+    />
+    <meta
+      property="og:image"
+      content="https://localpdfkit.com/images/og-repair-pdf.png"
+    />
+    <meta property="og:site_name" content="LocalPDFKit" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="How to Recover a Damaged PDF | LocalPDFKit"
+    />
+    <meta
+      name="twitter:description"
+      content="Recover readable content from damaged PDFs and review the repaired file before reuse."
+    />
+    <meta
+      name="twitter:image"
+      content="https://localpdfkit.com/images/twitter-repair-pdf.png"
+    />
+    <meta name="twitter:site" content="@LocalPDFKit" />
+    <meta name="apple-mobile-web-app-title" content="LocalPDFKit" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/images/favicon-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link href="/src/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased bg-gray-900 text-gray-300">
+    {{> navbar }}
+
+    <div id="app" class="min-h-screen container mx-auto p-4 md:p-8">
+      <article class="max-w-4xl mx-auto py-16 md:py-24">
+        <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-4">
+          Repair Guide
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          How to Recover a Damaged PDF
+        </h1>
+        <p class="text-lg text-gray-400 leading-relaxed mb-10">
+          Damaged PDFs can fail in different ways: blank pages, broken fonts,
+          missing images, or files that refuse to open at all. Recovery is often
+          about restoring readability first, then checking what still needs
+          manual review.
+        </p>
+
+        <section
+          class="bg-gray-800 border border-gray-700 rounded-2xl p-8 mb-10"
+        >
+          <h2 class="text-2xl font-bold text-white mb-4">Recovery Workflow</h2>
+          <ol class="space-y-4 list-decimal pl-5 text-gray-400">
+            <li>
+              Try opening the original file once to confirm the failure symptom.
+            </li>
+            <li>
+              Run the file through the
+              <a href="/repair-pdf" class="text-indigo-400 hover:underline"
+                >Repair PDF tool</a
+              >.
+            </li>
+            <li>Open the repaired file and review every critical page.</li>
+            <li>
+              If the file still has issues, try extracting readable pages or
+              images separately.
+            </li>
+          </ol>
+        </section>
+
+        <section class="space-y-6 mb-10">
+          <h2 class="text-2xl font-bold text-white">Common Signs of Damage</h2>
+          <ul class="space-y-3 list-disc pl-5 text-gray-400">
+            <li>The PDF will not open at all</li>
+            <li>Pages render blank or partially blank</li>
+            <li>Images disappear or appear corrupted</li>
+            <li>Text looks incomplete, scrambled, or missing</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-white">Important Review Step</h2>
+          <p class="text-gray-400 leading-relaxed">
+            A repaired file may become readable again without being identical to
+            the original. Always compare key pages before using it for business,
+            legal, or archive purposes.
+          </p>
+        </section>
+
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="/repair-pdf"
+            class="inline-flex items-center px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+            >Open Repair PDF</a
+          >
+          <a
+            href="/extract-pages"
+            class="inline-flex items-center px-6 py-3 rounded-full border border-gray-600 text-gray-200 font-semibold hover:border-gray-500 transition-colors"
+            >Try extracting pages</a
+          >
+        </div>
+      </article>
+    </div>
+
+    {{> footer }}
+    <script type="module" src="src/js/utils/lucide-init.ts"></script>
+    <script type="module" src="src/js/mobileMenu.ts"></script>
+    <script type="module" src="src/js/main.ts"></script>
+  </body>
+</html>

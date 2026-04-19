@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /assets/*.map
+Disallow: /*?*
+
+Sitemap: https://localpdfkit.com/sitemap.xml

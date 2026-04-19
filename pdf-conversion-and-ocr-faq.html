@@ -1,0 +1,183 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Conversion and OCR FAQ | LocalPDFKit</title>
+    <meta
+      name="description"
+      content="Find detailed answers about PDF conversion quality, OCR accuracy, scanned files, and troubleshooting document extraction."
+    />
+    <meta name="author" content="localpdfkit.com" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://localpdfkit.com/pdf-conversion-and-ocr-faq"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://localpdfkit.com/pdf-conversion-and-ocr-faq"
+    />
+    <meta
+      property="og:title"
+      content="PDF Conversion and OCR FAQ | LocalPDFKit"
+    />
+    <meta
+      property="og:description"
+      content="Detailed answers about editable conversion, OCR quality, and scanned-document troubleshooting."
+    />
+    <meta
+      property="og:image"
+      content="https://localpdfkit.com/images/og-ocr-pdf.png"
+    />
+    <meta property="og:site_name" content="LocalPDFKit" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="PDF Conversion and OCR FAQ | LocalPDFKit"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn why conversions vary and how OCR quality depends on your source file."
+    />
+    <meta
+      name="twitter:image"
+      content="https://localpdfkit.com/images/twitter-ocr-pdf.png"
+    />
+    <meta name="twitter:site" content="@LocalPDFKit" />
+    <meta name="apple-mobile-web-app-title" content="LocalPDFKit" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/images/favicon-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link href="/src/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased bg-gray-900 text-gray-300">
+    {{> navbar }}
+
+    <div id="app" class="min-h-screen container mx-auto p-4 md:p-8">
+      <article class="max-w-4xl mx-auto py-16 md:py-24">
+        <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-4">
+          Extended FAQ
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          PDF Conversion and OCR FAQ
+        </h1>
+        <p class="text-lg text-gray-400 leading-relaxed mb-10">
+          Conversion and OCR results are shaped by the source file. These
+          answers explain what to expect and how to troubleshoot common document
+          extraction problems.
+        </p>
+
+        <div class="space-y-4">
+          <details
+            class="bg-gray-800 border border-gray-700 rounded-2xl p-6"
+            open
+          >
+            <summary class="text-white font-semibold cursor-pointer">
+              Why does PDF to Word formatting change?
+            </summary>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              PDFs describe final page appearance, while Word files need an
+              editable structure. Complex layouts, tables, columns, and custom
+              fonts can shift during that reconstruction.
+            </p>
+          </details>
+
+          <details class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+            <summary class="text-white font-semibold cursor-pointer">
+              Why is OCR less accurate on some files?
+            </summary>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              OCR depends heavily on scan quality, contrast, page rotation,
+              language selection, and whether the original text is clear enough
+              to recognize.
+            </p>
+          </details>
+
+          <details class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+            <summary class="text-white font-semibold cursor-pointer">
+              Should I OCR a document before converting it?
+            </summary>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              If the PDF is just scanned images with no real text layer, OCR is
+              often the right first step before attempting editable reuse.
+            </p>
+          </details>
+
+          <details class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+            <summary class="text-white font-semibold cursor-pointer">
+              What is the best way to check the result?
+            </summary>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              Review headings, tables, page breaks, footnotes, and small text.
+              Those areas reveal conversion issues faster than a quick glance at
+              the first page.
+            </p>
+          </details>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href="/pdf-to-docx"
+            class="inline-flex items-center px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+            >Open PDF to Word</a
+          >
+          <a
+            href="/ocr-pdf"
+            class="inline-flex items-center px-6 py-3 rounded-full border border-gray-600 text-gray-200 font-semibold hover:border-gray-500 transition-colors"
+            >Open OCR PDF</a
+          >
+        </div>
+      </article>
+    </div>
+
+    {{> footer }}
+
+    <script type="module" src="src/js/utils/lucide-init.ts"></script>
+    <script type="module" src="src/js/mobileMenu.ts"></script>
+    <script type="module" src="src/js/main.ts"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why does PDF to Word formatting change?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PDFs describe final page appearance, while Word files need an editable structure. Complex layouts, tables, columns, and custom fonts can shift during that reconstruction."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is OCR less accurate on some files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OCR depends heavily on scan quality, contrast, page rotation, language selection, and whether the original text is clear enough to recognize."
+            }
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

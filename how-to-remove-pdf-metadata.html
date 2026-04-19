@@ -1,0 +1,149 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Remove PDF Metadata | LocalPDFKit</title>
+    <meta
+      name="description"
+      content="Learn what PDF metadata is, when to remove it, and how to clean common document properties before sharing."
+    />
+    <meta name="author" content="localpdfkit.com" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://localpdfkit.com/how-to-remove-pdf-metadata"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://localpdfkit.com/how-to-remove-pdf-metadata"
+    />
+    <meta
+      property="og:title"
+      content="How to Remove PDF Metadata | LocalPDFKit"
+    />
+    <meta
+      property="og:description"
+      content="A simple walkthrough for removing common document properties before sharing PDF files."
+    />
+    <meta
+      property="og:image"
+      content="https://localpdfkit.com/images/og-remove-metadata.png"
+    />
+    <meta property="og:site_name" content="LocalPDFKit" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="How to Remove PDF Metadata | LocalPDFKit"
+    />
+    <meta
+      name="twitter:description"
+      content="Understand what metadata can contain and when to clean it before external sharing."
+    />
+    <meta
+      name="twitter:image"
+      content="https://localpdfkit.com/images/twitter-remove-metadata.png"
+    />
+    <meta name="twitter:site" content="@LocalPDFKit" />
+    <meta name="apple-mobile-web-app-title" content="LocalPDFKit" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/images/favicon-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link href="/src/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased bg-gray-900 text-gray-300">
+    {{> navbar }}
+
+    <div id="app" class="min-h-screen container mx-auto p-4 md:p-8">
+      <article class="max-w-4xl mx-auto py-16 md:py-24">
+        <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-4">
+          Cleanup Tutorial
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          How to Remove PDF Metadata
+        </h1>
+        <p class="text-lg text-gray-400 leading-relaxed mb-10">
+          PDF metadata can include document title, author, producer details,
+          creation dates, and other properties. Not every file needs cleanup,
+          but it is a sensible review step before external sharing.
+        </p>
+
+        <section
+          class="bg-gray-800 border border-gray-700 rounded-2xl p-8 mb-10"
+        >
+          <h2 class="text-2xl font-bold text-white mb-4">Basic Workflow</h2>
+          <ol class="space-y-4 list-decimal pl-5 text-gray-400">
+            <li>
+              Open the
+              <a href="/remove-metadata" class="text-indigo-400 hover:underline"
+                >Remove Metadata tool</a
+              >.
+            </li>
+            <li>Upload the PDF you want to review.</li>
+            <li>Run metadata cleanup and download the new file.</li>
+            <li>
+              Use a metadata viewer if you want to confirm the cleaned result.
+            </li>
+          </ol>
+        </section>
+
+        <section class="space-y-6 mb-10">
+          <h2 class="text-2xl font-bold text-white">
+            When Metadata Cleanup Helps
+          </h2>
+          <ul class="space-y-3 list-disc pl-5 text-gray-400">
+            <li>Sending documents outside your organization</li>
+            <li>Preparing proposals, contracts, or client deliverables</li>
+            <li>Removing old author or software history from a reused file</li>
+            <li>Reducing unnecessary hidden properties before archiving</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-white">Important Reminder</h2>
+          <p class="text-gray-400 leading-relaxed">
+            Metadata cleanup is useful, but it is not the same as legal,
+            security, or compliance review. If the visible page content itself
+            contains sensitive information, removing metadata alone will not fix
+            that.
+          </p>
+        </section>
+
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="/remove-metadata"
+            class="inline-flex items-center px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+            >Open Remove Metadata</a
+          >
+          <a
+            href="/pdf-privacy-and-browser-processing-faq"
+            class="inline-flex items-center px-6 py-3 rounded-full border border-gray-600 text-gray-200 font-semibold hover:border-gray-500 transition-colors"
+            >Read privacy FAQ</a
+          >
+        </div>
+      </article>
+    </div>
+
+    {{> footer }}
+
+    <script type="module" src="src/js/utils/lucide-init.ts"></script>
+    <script type="module" src="src/js/mobileMenu.ts"></script>
+    <script type="module" src="src/js/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+{{#if simpleMode}} {{> navbar-simple}} {{else}}
+<nav class="site-nav-surface border-b border-gray-700 sticky top-0 z-30">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <div
+        class="site-brand-lockup flex-shrink-0 flex items-center cursor-pointer"
+        id="home-logo"
+      >
+        <span class="site-brand-mark">
+          <img
+            id="nav-logo"
+            src="{{baseUrl}}{{#if brandLogo}}{{brandLogo}}{{else}}images/favicon-no-bg.svg{{/if}}"
+            alt="{{#if brandName}}{{brandName}}{{else}}LocalPDFKit{{/if}} Logo"
+            class="h-8 w-8"
+          />
+        </span>
+        <span id="nav-brand" class="text-white font-bold text-xl ml-2">
+          <a href="/"
+            >{{#if brandName}}{{brandName}}{{else}}LocalPDFKit{{/if}}</a
+          >
+        </span>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="/" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="/tools" class="nav-link">All Tools</a>
+        <a href="/blog" class="nav-link">Blog</a>
+        <a href="/workflows" class="nav-link">Workflows</a>
+        <a href="/how-it-works" class="nav-link">How It Works</a>
+        <a href="/faq" class="nav-link" data-i18n="footer.faqLink">FAQ</a>
+        <a href="/about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="/contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="md:hidden flex items-center gap-4">
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 transition-colors"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only" data-i18n="nav.openMainMenu"
+            >Open main menu</span
+          >
+          <svg
+            id="menu-icon"
+            class="block h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <svg
+            id="close-icon"
+            class="hidden h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="site-nav-surface hidden md:hidden border-t border-gray-700"
+  >
+    <div class="px-2 pt-2 pb-3 space-y-1 text-center">
+      <a href="/" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+      <a href="/tools" class="mobile-nav-link">All Tools</a>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/workflows" class="mobile-nav-link">Workflows</a>
+      <a href="/how-it-works" class="mobile-nav-link">How It Works</a>
+      <a href="/faq" class="mobile-nav-link" data-i18n="footer.faqLink">FAQ</a>
+      <a href="/about" class="mobile-nav-link" data-i18n="nav.about">About</a>
+      <a href="/contact" class="mobile-nav-link" data-i18n="nav.contact"
+        >Contact</a
+      >
+    </div>
+  </div>
+</nav>
+{{/if}}

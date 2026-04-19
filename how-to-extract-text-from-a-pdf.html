@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Extract Text from a PDF | LocalPDFKit</title>
+    <meta
+      name="description"
+      content="Learn how to extract text from a PDF, when a digital PDF works best, and when scanned pages need OCR first."
+    />
+    <meta name="author" content="localpdfkit.com" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://localpdfkit.com/how-to-extract-text-from-a-pdf"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://localpdfkit.com/how-to-extract-text-from-a-pdf"
+    />
+    <meta
+      property="og:title"
+      content="How to Extract Text from a PDF | LocalPDFKit"
+    />
+    <meta
+      property="og:description"
+      content="A practical guide to text extraction, digital PDFs, and OCR fallback for scanned files."
+    />
+    <meta
+      property="og:image"
+      content="https://localpdfkit.com/images/og-pdf-to-text.png"
+    />
+    <meta property="og:site_name" content="LocalPDFKit" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="How to Extract Text from a PDF | LocalPDFKit"
+    />
+    <meta
+      name="twitter:description"
+      content="Extract text from digital PDFs and learn when OCR is needed for scanned pages."
+    />
+    <meta
+      name="twitter:image"
+      content="https://localpdfkit.com/images/twitter-pdf-to-text.png"
+    />
+    <meta name="twitter:site" content="@LocalPDFKit" />
+    <meta name="apple-mobile-web-app-title" content="LocalPDFKit" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/images/favicon-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link href="/src/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased bg-gray-900 text-gray-300">
+    {{> navbar }}
+
+    <div id="app" class="min-h-screen container mx-auto p-4 md:p-8">
+      <article class="max-w-4xl mx-auto py-16 md:py-24">
+        <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-4">
+          Text Extraction Tutorial
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          How to Extract Text from a PDF
+        </h1>
+        <p class="text-lg text-gray-400 leading-relaxed mb-10">
+          Text extraction works best when the PDF already contains a digital
+          text layer. If the file is a scan or photo-based document, OCR is
+          usually the right next step instead of standard extraction.
+        </p>
+
+        <section
+          class="bg-gray-800 border border-gray-700 rounded-2xl p-8 mb-10"
+        >
+          <h2 class="text-2xl font-bold text-white mb-4">Basic Workflow</h2>
+          <ol class="space-y-4 list-decimal pl-5 text-gray-400">
+            <li>
+              Open the
+              <a href="/pdf-to-text" class="text-indigo-400 hover:underline"
+                >PDF to Text tool</a
+              >.
+            </li>
+            <li>Upload one or more digital PDFs.</li>
+            <li>Run extraction and review the output text.</li>
+            <li>
+              Use OCR if the PDF is image-based or the text result is empty.
+            </li>
+          </ol>
+        </section>
+
+        <section class="space-y-6 mb-10">
+          <h2 class="text-2xl font-bold text-white">When It Works Best</h2>
+          <p class="text-gray-400 leading-relaxed">
+            Contracts, reports, ebooks, and office-exported PDFs usually work
+            well because the text is already embedded as selectable content.
+          </p>
+          <h2 class="text-2xl font-bold text-white">When OCR Is Better</h2>
+          <p class="text-gray-400 leading-relaxed">
+            Scanned invoices, photographed pages, fax-like documents, and
+            image-only PDFs often need OCR before the text can be searched or
+            copied.
+          </p>
+        </section>
+
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="/pdf-to-text"
+            class="inline-flex items-center px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+            >Open PDF to Text</a
+          >
+          <a
+            href="/how-to-scan-and-ocr-a-pdf"
+            class="inline-flex items-center px-6 py-3 rounded-full border border-gray-600 text-gray-200 font-semibold hover:border-gray-500 transition-colors"
+            >Read OCR guide</a
+          >
+        </div>
+      </article>
+    </div>
+
+    {{> footer }}
+    <script type="module" src="src/js/utils/lucide-init.ts"></script>
+    <script type="module" src="src/js/mobileMenu.ts"></script>
+    <script type="module" src="src/js/main.ts"></script>
+  </body>
+</html>

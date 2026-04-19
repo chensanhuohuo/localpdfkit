@@ -1,0 +1,40 @@
+{
+    "name": "LocalPDFKit",
+    "short_name": "LocalPDFKit",
+    "description": "Private PDF tools that run in your browser. Merge, convert, and organize PDFs without uploading your files.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0d2f4c",
+    "theme_color": "#184c78",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/images/favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/images/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/images/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "categories": [
+        "productivity",
+        "utilities",
+        "privacy",
+        "pdf",
+        "security",
+        "offline",
+        "tools"
+    ],
+    "screenshots": []
+}

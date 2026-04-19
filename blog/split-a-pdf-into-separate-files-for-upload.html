@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split a PDF Into Separate Files for Upload Portals and Application Forms | LocalPDFKit Blog</title>
+    <meta name="description" content="Learn how to split a PDF into smaller files when a portal requires separate uploads for passport pages, statements, forms, or supporting evidence." />
+    <meta name="author" content="localpdfkit.com" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://localpdfkit.com/blog/split-a-pdf-into-separate-files-for-upload" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://localpdfkit.com/blog/split-a-pdf-into-separate-files-for-upload" />
+    <meta property="og:title" content="Split a PDF Into Separate Files for Upload Portals and Application Forms | LocalPDFKit Blog" />
+    <meta property="og:description" content="Learn how to split a PDF into smaller files when a portal requires separate uploads for passport pages, statements, forms, or supporting evidence." />
+    <meta property="og:image" content="https://localpdfkit.com/images/og-home.png" />
+    <meta property="og:site_name" content="LocalPDFKit" />
+    <meta property="article:published_time" content="2026-04-15" />
+    <meta property="article:modified_time" content="2026-04-15" />
+    <meta property="article:section" content="Application Documents" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Split a PDF Into Separate Files for Upload Portals and Application Forms | LocalPDFKit Blog" />
+    <meta name="twitter:description" content="Learn how to split a PDF into smaller files when a portal requires separate uploads for passport pages, statements, forms, or supporting evidence." />
+    <meta name="twitter:image" content="https://localpdfkit.com/images/og-home.png" />
+    <meta name="twitter:site" content="@LocalPDFKit" />
+    <meta name="apple-mobile-web-app-title" content="LocalPDFKit" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link href="/src/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased bg-gray-900 text-gray-300 blog-page blog-detail-page">
+    {{> navbar }}
+
+    <main id="app" class="min-h-screen container mx-auto p-4 md:p-8">
+      <section class="max-w-6xl mx-auto py-10 md:py-16">
+        <nav class="blog-breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/blog">Blog</a>
+          <span>/</span>
+          <span>Split a PDF Into Separate Files for Upload Portals and Application Forms</span>
+        </nav>
+      </section>
+
+      <article class="blog-article-shell max-w-6xl mx-auto pb-20">
+        <header class="blog-hero">
+          <div class="blog-eyebrow-row">
+            <span class="blog-chip blog-chip-strong">Application Documents</span>
+            <span class="blog-meta-inline">Updated April 15, 2026</span>
+          </div>
+          <h1 class="blog-title">Split a PDF Into Separate Files for Upload Portals and Application Forms</h1>
+          <p class="blog-lead">Some portals reject one large PDF and instead ask for separate files by category. This workflow helps you split the document cleanly without losing pages.</p>
+          <div class="blog-meta-row">
+            <span>LocalPDFKit Editorial Team</span>
+            <span>April 15, 2026</span>
+            <span>2 min read</span>
+          </div>
+          <div class="blog-chip-row">
+            <span class="blog-chip">split pdf</span><span class="blog-chip">upload portal</span><span class="blog-chip">separate pdf files</span><span class="blog-chip">extract pages</span>
+          </div>
+        </header>
+
+        <div class="blog-layout">
+          <div class="blog-main-column">
+            <section class="blog-panel">
+              <div class="blog-prose">
+                <p>Some document portals do not want one combined file. They want one PDF for identity documents, another for bank statements, and another for supporting letters. When that happens, splitting a PDF properly saves time and prevents upload errors.</p>
+<h2 id="when-splitting-is-the-right-move" tabindex="-1">When splitting is the right move</h2>
+<p>This workflow is useful when:</p>
+<ul>
+<li>a government form asks for different evidence categories</li>
+<li>a job portal limits one file per section</li>
+<li>a client wants each report as its own PDF</li>
+<li>you need smaller files for email or review</li>
+</ul>
+<p>If the destination asks for separate documents, do not force everything into one PDF just because it is easier for you.</p>
+<h2 id="step-1-decide-your-output-groups-before-touching-the-file" tabindex="-1">Step 1: Decide your output groups before touching the file</h2>
+<p>Before you use <a href="/split-pdf">Split PDF</a>, decide how the final files should be grouped. This could be:</p>
+<ul>
+<li>one page per file</li>
+<li>one statement per file</li>
+<li>one section per category</li>
+<li>a custom page range for each upload slot</li>
+</ul>
+<p>Planning the groups first prevents confusing names like <code>document-part-3-final-final.pdf</code>.</p>
+<h2 id="step-2-use-split-pdf-for-simple-page-range-separation" tabindex="-1">Step 2: Use Split PDF for simple page-range separation</h2>
+<p><a href="/split-pdf">Split PDF</a> is best when the document should be divided by clear page ranges. For example:</p>
+<ul>
+<li>pages 1 to 2 for passport</li>
+<li>pages 3 to 6 for statements</li>
+<li>pages 7 to 9 for letters</li>
+</ul>
+<p>If the grouping is more selective than that, <a href="/extract-pages">Extract Pages</a> may be easier.</p>
+<h2 id="step-3-use-extract-pages-for-custom-selections" tabindex="-1">Step 3: Use Extract Pages for custom selections</h2>
+<p><a href="/extract-pages">Extract Pages</a> works well when you need specific pages but not full continuous ranges. This is common when one combined scan contains useful pages mixed with unnecessary ones.</p>
+<p>Examples:</p>
+<ul>
+<li>only keep signed pages</li>
+<li>pull one annex out of a large report</li>
+<li>isolate the pages a reviewer asked for</li>
+</ul>
+<h2 id="step-4-check-naming-before-upload" tabindex="-1">Step 4: Check naming before upload</h2>
+<p>Clean file names matter more than people think. A reviewer should be able to understand your files without opening all of them first.</p>
+<p>Better examples:</p>
+<ul>
+<li><code>passport-pages.pdf</code></li>
+<li><code>bank-statements-mar-may.pdf</code></li>
+<li><code>employment-letter.pdf</code></li>
+</ul>
+<p>Weak examples:</p>
+<ul>
+<li><code>scan-2.pdf</code></li>
+<li><code>final-new.pdf</code></li>
+<li><code>doc-part-a.pdf</code></li>
+</ul>
+<h2 id="step-5-reduce-size-only-after-splitting" tabindex="-1">Step 5: Reduce size only after splitting</h2>
+<p>If any output file is still too large, compress that final file after splitting. <a href="/compress-pdf">Compress PDF</a> is more effective at the end of the workflow.</p>
+<h2 id="common-mistakes" tabindex="-1">Common mistakes</h2>
+<h3 id="splitting-without-checking-page-boundaries" tabindex="-1">Splitting without checking page boundaries</h3>
+<p>One wrong page can put a signature or attachment in the wrong file.</p>
+<h3 id="keeping-pages-that-do-not-belong-to-the-upload-category" tabindex="-1">Keeping pages that do not belong to the upload category</h3>
+<p>That can confuse the reviewer and make your submission look careless.</p>
+<h3 id="uploading-unnamed-files" tabindex="-1">Uploading unnamed files</h3>
+<p>Clear names make both manual review and your own record-keeping easier.</p>
+<p>If you later need to rebuild a single package from the separated files, the matching workflow is <a href="/blog/merge-bank-statements-into-one-pdf">Merge Bank Statements Into One PDF for Mortgage, Visa, or Loan Applications</a>.</p>
+
+              </div>
+            </section>
+            
+        <section class="blog-panel">
+          <p class="blog-panel-eyebrow">Related tools</p>
+          <h2 class="blog-panel-title">Open the workflow without leaving the article</h2>
+          <div class="blog-resource-grid">
+
+          <a href="/split-pdf" class="blog-resource-card">
+            <strong>Split PDF</strong>
+            <span>Open the tool directly on LocalPDFKit.</span>
+          </a>
+          <a href="/extract-pages" class="blog-resource-card">
+            <strong>Extract Pages</strong>
+            <span>Open the tool directly on LocalPDFKit.</span>
+          </a>
+          <a href="/organize-pdf" class="blog-resource-card">
+            <strong>Organize PDF</strong>
+            <span>Open the tool directly on LocalPDFKit.</span>
+          </a>
+          <a href="/compress-pdf" class="blog-resource-card">
+            <strong>Compress PDF</strong>
+            <span>Open the tool directly on LocalPDFKit.</span>
+          </a>
+          </div>
+        </section>
+            
+        <section class="blog-panel">
+          <p class="blog-panel-eyebrow">Keep reading</p>
+          <h2 class="blog-panel-title">More tutorials from the blog</h2>
+          <div class="blog-resource-grid">
+
+          <a href="/blog/extract-pages-from-a-pdf-for-a-visa-application" class="blog-resource-card">
+            <strong>Extract Pages From a PDF for a Visa, Job, or Government Application</strong>
+            <span>Application systems often need only part of a long file. Extracting the exact pages keeps uploads cleaner and easier for reviewers to process.</span>
+          </a>
+          <a href="/blog/merge-bank-statements-into-one-pdf" class="blog-resource-card">
+            <strong>Merge Bank Statements Into One PDF for Mortgage, Visa, or Loan Applications</strong>
+            <span>If an application portal asks for one file instead of several statements, this workflow helps you merge them in the right order and keep the result review-friendly.</span>
+          </a>
+          <a href="/blog/compress-a-pdf-for-a-job-application" class="blog-resource-card">
+            <strong>Compress a PDF for a Job Application Without Making It Look Bad</strong>
+            <span>Job application systems often reject oversized PDFs. A smarter compression workflow helps you pass the upload limit without hurting the presentation of the file.</span>
+          </a>
+          </div>
+        </section>
+            <section class="blog-panel blog-cta-panel">
+              <p class="blog-panel-eyebrow">Next step</p>
+              <h2 class="blog-panel-title">Keep the workflow moving</h2>
+              <p class="text-gray-400 leading-relaxed">
+                Open the tool, browse the full tool directory, or return to the blog for the next tutorial in your PDF workflow.
+              </p>
+              <div class="blog-cta-row">
+                <a href="/tools" class="blog-button-primary">Browse all tools</a>
+                <a href="/blog" class="blog-button-secondary">Back to blog</a>
+              </div>
+            </section>
+          </div>
+
+          <aside class="blog-sidebar">
+
+        <div class="blog-panel blog-sticky-panel">
+          <p class="blog-panel-eyebrow">On this page</p>
+          <nav class="blog-toc">
+
+            <a href="#when-splitting-is-the-right-move" class="blog-toc-link blog-toc-level-2">
+              When splitting is the right move
+            </a>
+            <a href="#step-1-decide-your-output-groups-before-touching-the-file" class="blog-toc-link blog-toc-level-2">
+              Step 1: Decide your output groups before touching the file
+            </a>
+            <a href="#step-2-use-split-pdf-for-simple-page-range-separation" class="blog-toc-link blog-toc-level-2">
+              Step 2: Use Split PDF for simple page-range separation
+            </a>
+            <a href="#step-3-use-extract-pages-for-custom-selections" class="blog-toc-link blog-toc-level-2">
+              Step 3: Use Extract Pages for custom selections
+            </a>
+            <a href="#step-4-check-naming-before-upload" class="blog-toc-link blog-toc-level-2">
+              Step 4: Check naming before upload
+            </a>
+            <a href="#step-5-reduce-size-only-after-splitting" class="blog-toc-link blog-toc-level-2">
+              Step 5: Reduce size only after splitting
+            </a>
+            <a href="#common-mistakes" class="blog-toc-link blog-toc-level-2">
+              Common mistakes
+            </a>
+            <a href="#splitting-without-checking-page-boundaries" class="blog-toc-link blog-toc-level-3">
+              Splitting without checking page boundaries
+            </a>
+            <a href="#keeping-pages-that-do-not-belong-to-the-upload-category" class="blog-toc-link blog-toc-level-3">
+              Keeping pages that do not belong to the upload category
+            </a>
+            <a href="#uploading-unnamed-files" class="blog-toc-link blog-toc-level-3">
+              Uploading unnamed files
+            </a>
+          </nav>
+        </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    {{> footer }}
+
+    <script type="module" src="/src/js/utils/lucide-init.ts"></script>
+    <script type="module" src="/src/js/mobileMenu.ts"></script>
+    <script type="module" src="/src/js/main.ts"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Split a PDF Into Separate Files for Upload Portals and Application Forms",
+  "description": "Learn how to split a PDF into smaller files when a portal requires separate uploads for passport pages, statements, forms, or supporting evidence.",
+  "datePublished": "2026-04-15",
+  "dateModified": "2026-04-15",
+  "author": {
+    "@type": "Organization",
+    "name": "LocalPDFKit Editorial Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LocalPDFKit",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://localpdfkit.com/images/favicon.svg"
+    }
+  },
+  "image": "https://localpdfkit.com/images/og-home.png",
+  "mainEntityOfPage": "https://localpdfkit.com/blog/split-a-pdf-into-separate-files-for-upload"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "LocalPDFKit",
+      "item": "https://localpdfkit.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://localpdfkit.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Split a PDF Into Separate Files for Upload Portals and Application Forms",
+      "item": "https://localpdfkit.com/blog/split-a-pdf-into-separate-files-for-upload"
+    }
+  ]
+}
+    </script>
+  </body>
+</html>
