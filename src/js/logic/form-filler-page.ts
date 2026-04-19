@@ -92,13 +92,6 @@ function resetState() {
     viewerContainer.style.height = '';
     viewerContainer.style.aspectRatio = '';
   }
-
-  const toolUploader = document.getElementById('tool-uploader');
-  const isFullWidth = localStorage.getItem('fullWidthMode') !== 'false';
-  if (toolUploader && !isFullWidth) {
-    toolUploader.classList.remove('max-w-6xl');
-    toolUploader.classList.add('max-w-2xl');
-  }
 }
 
 // File handling
@@ -154,14 +147,6 @@ async function setupFormViewer() {
     console.error('PDF viewer container not found');
     hideLoader();
     return;
-  }
-
-  const toolUploader = document.getElementById('tool-uploader');
-  // Default to true if not set
-  const isFullWidth = localStorage.getItem('fullWidthMode') !== 'false';
-  if (toolUploader && !isFullWidth) {
-    toolUploader.classList.remove('max-w-2xl');
-    toolUploader.classList.add('max-w-6xl');
   }
 
   try {

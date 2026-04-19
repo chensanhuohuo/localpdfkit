@@ -587,52 +587,6 @@ const init = async () => {
     });
   }
 
-  // Full-width toggle functionality
-  const fullWidthToggle = document.getElementById(
-    'full-width-toggle'
-  ) as HTMLInputElement;
-  const toolInterface = document.getElementById('tool-interface');
-
-  const savedFullWidth = localStorage.getItem('fullWidthMode') !== 'false';
-  if (fullWidthToggle) {
-    fullWidthToggle.checked = savedFullWidth;
-    applyFullWidthMode(savedFullWidth);
-  }
-
-  function applyFullWidthMode(enabled: boolean) {
-    if (toolInterface) {
-      if (enabled) {
-        toolInterface.classList.remove('max-w-4xl');
-      } else {
-        toolInterface.classList.add('max-w-4xl');
-      }
-    }
-
-    // Apply to all page uploaders
-    const pageUploaders = document.querySelectorAll('#tool-uploader');
-    pageUploaders.forEach((uploader) => {
-      if (enabled) {
-        uploader.classList.remove('max-w-2xl', 'max-w-5xl');
-      } else {
-        // Restore original max-width (most are max-w-2xl, add-stamps is max-w-5xl)
-        if (
-          !uploader.classList.contains('max-w-2xl') &&
-          !uploader.classList.contains('max-w-5xl')
-        ) {
-          uploader.classList.add('max-w-2xl');
-        }
-      }
-    });
-  }
-
-  if (fullWidthToggle) {
-    fullWidthToggle.addEventListener('change', (e) => {
-      const enabled = (e.target as HTMLInputElement).checked;
-      localStorage.setItem('fullWidthMode', enabled.toString());
-      applyFullWidthMode(enabled);
-    });
-  }
-
   const compactModeToggle = document.getElementById(
     'compact-mode-toggle'
   ) as HTMLInputElement;

@@ -25,9 +25,6 @@ const saveStampedBtn = document.getElementById(
 const backToToolsBtn = document.getElementById(
   'back-to-tools'
 ) as HTMLButtonElement | null;
-const toolUploader = document.getElementById(
-  'tool-uploader'
-) as HTMLDivElement | null;
 const usernameInput = document.getElementById(
   'stamp-username'
 ) as HTMLInputElement | null;
@@ -55,12 +52,6 @@ function resetState() {
     viewerContainer.style.aspectRatio = '';
   }
 
-  const isFullWidth = localStorage.getItem('fullWidthMode') !== 'false';
-  if (toolUploader && !isFullWidth) {
-    toolUploader.classList.remove('max-w-6xl');
-    toolUploader.classList.add('max-w-2xl');
-  }
-
   updateFileList();
   if (pdfInput) pdfInput.value = '';
 }
@@ -74,13 +65,6 @@ function updateFileList() {
 
   fileListDiv.classList.remove('hidden');
   fileListDiv.innerHTML = '';
-
-  // Expand container width for viewer if NOT in full width mode (default to true if not set)
-  const isFullWidth = localStorage.getItem('fullWidthMode') !== 'false';
-  if (toolUploader && !isFullWidth) {
-    toolUploader.classList.remove('max-w-2xl');
-    toolUploader.classList.add('max-w-6xl');
-  }
 
   const wrapper = document.createElement('div');
   wrapper.className =
