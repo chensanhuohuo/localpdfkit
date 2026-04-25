@@ -210,15 +210,60 @@ function createCorsProxyMiddleware(): Connect.NextHandleFunction {
   };
 }
 
+function createLibreOfficeCompressedAssetsMiddleware(): Connect.NextHandleFunction {
+  return (
+    req: IncomingMessage,
+    res: ServerResponse,
+    next: Connect.NextFunction
+  ): void => {
+    if (!req.url || (req.method !== 'GET' && req.method !== 'HEAD')) {
+      return next();
+    }
+
+    const pathname = new URL(req.url, 'http://localhost').pathname;
+    const isCompressedLibreOfficeAsset =
+      pathname === '/libreoffice-wasm/soffice.wasm.gz' ||
+      pathname === '/libreoffice-wasm/soffice.data.gz';
+
+    if (!isCompressedLibreOfficeAsset) {
+      return next();
+    }
+
+    const filePath = resolve(__dirname, 'public', `.${pathname}`);
+    if (!fs.existsSync(filePath)) {
+      return next();
+    }
+
+    res.statusCode = 200;
+    res.setHeader('Content-Encoding', 'gzip');
+    res.setHeader('Vary', 'Accept-Encoding');
+    res.setHeader(
+      'Content-Type',
+      pathname.endsWith('.wasm.gz')
+        ? 'application/wasm'
+        : 'application/octet-stream'
+    );
+
+    if (req.method === 'HEAD') {
+      res.end();
+      return;
+    }
+
+    fs.createReadStream(filePath).pipe(res);
+  };
+}
+
 function serverUtilitiesPlugin(): Plugin {
   return {
     name: 'server-utilities',
     configureServer(server) {
       server.middlewares.use(createCorsProxyMiddleware());
+      server.middlewares.use(createLibreOfficeCompressedAssetsMiddleware());
       server.middlewares.use(createPageRoutingMiddleware(true));
     },
     configurePreviewServer(server) {
       server.middlewares.use(createCorsProxyMiddleware());
+      server.middlewares.use(createLibreOfficeCompressedAssetsMiddleware());
       server.middlewares.use(createPageRoutingMiddleware(false));
     },
   };
