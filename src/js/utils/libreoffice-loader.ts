@@ -53,8 +53,8 @@ export class LibreOfficeConverter {
 
       this.converter = new WorkerBrowserConverter({
         sofficeJs: `${this.basePath}soffice.js`,
-        sofficeWasm: `${this.basePath}soffice.wasm.gz`,
-        sofficeData: `${this.basePath}soffice.data.gz`,
+        sofficeWasm: `${this.basePath}soffice.wasm`,
+        sofficeData: `${this.basePath}soffice.data`,
         sofficeWorkerJs: `${this.basePath}soffice.worker.js`,
         browserWorkerJs: `${this.basePath}browser.worker.global.js`,
         verbose: false,

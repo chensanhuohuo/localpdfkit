@@ -288,6 +288,10 @@ function rewriteHtmlPathsPlugin(): Plugin {
 
 export default defineConfig(() => {
   const USE_CDN = process.env.VITE_USE_CDN === 'true';
+  const compressionMode = process.env.COMPRESSION_MODE || 'o';
+  const enableBrotli =
+    compressionMode === 'b' || compressionMode === 'all';
+  const enableGzip = compressionMode === 'g' || compressionMode === 'all';
   const generatedBlogInputs = getGeneratedBlogInputs();
 
   if (USE_CDN) {
@@ -333,27 +337,36 @@ export default defineConfig(() => {
       viteStaticCopy({
         targets: staticCopyTargets,
       }),
-      viteCompression({
-        algorithm: 'brotliCompress',
-        ext: '.br',
-        threshold: 1024,
-        compressionOptions: {
-          params: {
-            [zlibConstants.BROTLI_PARAM_QUALITY]: 11,
-            [zlibConstants.BROTLI_PARAM_MODE]: zlibConstants.BROTLI_MODE_TEXT,
-          },
-        },
-        deleteOriginFile: false,
-      }),
-      viteCompression({
-        algorithm: 'gzip',
-        ext: '.gz',
-        threshold: 1024,
-        compressionOptions: {
-          level: 9,
-        },
-        deleteOriginFile: false,
-      }),
+      ...(enableBrotli
+        ? [
+            viteCompression({
+              algorithm: 'brotliCompress',
+              ext: '.br',
+              threshold: 1024,
+              compressionOptions: {
+                params: {
+                  [zlibConstants.BROTLI_PARAM_QUALITY]: 11,
+                  [zlibConstants.BROTLI_PARAM_MODE]:
+                    zlibConstants.BROTLI_MODE_TEXT,
+                },
+              },
+              deleteOriginFile: false,
+            }),
+          ]
+        : []),
+      ...(enableGzip
+        ? [
+            viteCompression({
+              algorithm: 'gzip',
+              ext: '.gz',
+              threshold: 1024,
+              compressionOptions: {
+                level: 9,
+              },
+              deleteOriginFile: false,
+            }),
+          ]
+        : []),
     ],
     define: {
       __SIMPLE_MODE__: JSON.stringify(process.env.SIMPLE_MODE === 'true'),
