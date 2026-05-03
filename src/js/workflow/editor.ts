@@ -26,23 +26,23 @@ export interface WorkflowEditor {
 }
 
 const categoryColors: Record<string, string> = {
-  Input: '#60a5fa',
-  'Edit & Annotate': '#a5b4fc',
-  'Organize & Manage': '#c4b5fd',
-  'Optimize & Repair': '#fcd34d',
-  'Secure PDF': '#fda4af',
-  Output: '#5eead4',
+  Input: '#0f746f',
+  'Edit & Annotate': '#2c7a7b',
+  'Organize & Manage': '#3b6f91',
+  'Optimize & Repair': '#b7791f',
+  'Secure PDF': '#b45309',
+  Output: '#0b5f5b',
 };
 
 function getStatusInfo(status: string, connected: boolean) {
   if (status === 'running')
-    return { color: '#eab308', label: 'Running...', animate: true };
+    return { color: '#b7791f', label: 'Running...', animate: true };
   if (status === 'completed')
-    return { color: '#22c55e', label: 'Complete', animate: false };
+    return { color: '#0f746f', label: 'Complete', animate: false };
   if (status === 'error')
-    return { color: '#ef4444', label: 'Failed', animate: false };
+    return { color: '#dc2626', label: 'Failed', animate: false };
   return {
-    color: connected ? '#22c55e' : '#6b7280',
+    color: connected ? '#0f746f' : '#6f8192',
     label: connected ? 'Connected' : 'Not connected',
     animate: false,
   };
@@ -66,7 +66,7 @@ class WorkflowNodeElement extends LitElement {
     const node = this.data;
     const inputs = Object.entries(node.inputs || {});
     const outputs = Object.entries(node.outputs || {});
-    const color = categoryColors[node.category] || '#6b7280';
+    const color = categoryColors[node.category] || '#6f8192';
     const emitFn = this.emit;
 
     return html`
@@ -106,8 +106,9 @@ class WorkflowNodeElement extends LitElement {
           : null}
         <div
           style="
-          background: #1f2937; border: 1px solid #374151;
-          border-radius: 12px; width: 100%; overflow: hidden;
+          background: #ffffff; border: 1px solid rgba(143, 168, 187, 0.28);
+          border-radius: 14px; width: 100%; overflow: hidden;
+          box-shadow: 0 14px 34px rgba(16, 34, 56, 0.12);
         "
         >
           <div
@@ -117,7 +118,7 @@ class WorkflowNodeElement extends LitElement {
               data-wf="bar"
               style="
               height: 100%; width: 100%;
-              background: #6b7280; opacity: 0.25;
+              background: #6f8192; opacity: 0.25;
             "
             ></div>
           </div>
@@ -127,12 +128,12 @@ class WorkflowNodeElement extends LitElement {
             <span
               data-wf="dot"
               style="
-              width: 7px; height: 7px; border-radius: 50%; background: #6b7280; flex-shrink: 0;
+              width: 7px; height: 7px; border-radius: 50%; background: #6f8192; flex-shrink: 0;
             "
             ></span>
             <span
               data-wf="label"
-              style="font-size: 10px; color: #6b7280; font-weight: 500; flex: 1;"
+              style="font-size: 10px; color: #6f8192; font-weight: 600; flex: 1;"
               >Not connected</span
             >
             <span
@@ -140,7 +141,7 @@ class WorkflowNodeElement extends LitElement {
               style="
               cursor: pointer; display: flex; align-items: center; justify-content: center;
               width: 18px; height: 18px; border-radius: 4px;
-              color: #6b7280; transition: all 0.15s;
+              color: #6f8192; transition: all 0.15s;
             "
             >
               <svg
@@ -158,7 +159,9 @@ class WorkflowNodeElement extends LitElement {
               </svg>
             </span>
           </div>
-          <div style="height: 1px; background: #374151; margin: 0 14px;"></div>
+          <div
+            style="height: 1px; background: rgba(143, 168, 187, 0.22); margin: 0 14px;"
+          ></div>
           <div
             style="padding: 10px 14px 12px; display: flex; align-items: flex-start; gap: 10px;"
           >
@@ -168,12 +171,12 @@ class WorkflowNodeElement extends LitElement {
             ></i>
             <div style="flex: 1; min-width: 0;">
               <div
-                style="font-size: 13px; font-weight: 600; color: #f3f4f6; line-height: 1.3;"
+                style="font-size: 13px; font-weight: 700; color: #102238; line-height: 1.3;"
               >
                 ${node.label}
               </div>
               <div
-                style="font-size: 11px; color: #9ca3af; margin-top: 2px; line-height: 1.3;"
+                style="font-size: 11px; color: #4f677b; margin-top: 2px; line-height: 1.3;"
               >
                 ${node.description}
               </div>
@@ -242,7 +245,7 @@ export function updateNodeDisplay(
   if (bar) {
     bar.className = st.animate ? 'wf-bar-slide' : '';
     bar.style.background = st.animate
-      ? `linear-gradient(90deg, #1f2937 0%, ${st.color} 50%, #1f2937 100%)`
+      ? `linear-gradient(90deg, rgba(183, 121, 31, 0.12) 0%, ${st.color} 50%, rgba(15, 116, 111, 0.12) 100%)`
       : st.color;
     bar.style.opacity =
       status === 'idle' && !connected
@@ -290,8 +293,9 @@ export async function createWorkflowEditor(
             return html`<div
               style="
             width: 14px; height: 14px; border-radius: 50%;
-            background: #6366f1; border: 2px solid #1f2937;
-            box-shadow: 0 0 0 1px #6366f1; cursor: crosshair;
+            background: #0f746f; border: 2px solid #ffffff;
+            box-shadow: 0 0 0 2px rgba(15, 116, 111, 0.28), 0 2px 6px rgba(16, 34, 56, 0.16);
+            cursor: crosshair;
           "
             ></div>`;
           };
@@ -372,7 +376,7 @@ export async function createWorkflowEditor(
     );
     if (!target) return;
     target.style.color = '#f87171';
-    target.style.background = 'rgba(248,113,113,0.1)';
+    target.style.background = 'rgba(248,113,113,0.12)';
   };
 
   const onMouseLeave = (e: Event) => {
@@ -380,7 +384,7 @@ export async function createWorkflowEditor(
       '[data-wf-delete]'
     );
     if (!target) return;
-    target.style.color = '#6b7280';
+    target.style.color = '#6f8192';
     target.style.background = 'transparent';
   };
 
