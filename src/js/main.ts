@@ -6,7 +6,13 @@ import '@phosphor-icons/web/regular';
 import * as pdfjsLib from 'pdfjs-dist';
 import '../css/styles.css';
 import { formatShortcutDisplay, formatStars } from './utils/helpers.js';
-import { initI18n, applyTranslations, rewriteLinks, t } from './i18n/index.js';
+import {
+  initI18n,
+  applyTranslations,
+  rewriteLinks,
+  t,
+  injectLanguageSwitcher,
+} from './i18n/index.js';
 import {
   loadRuntimeConfig,
   isToolDisabled,
@@ -17,6 +23,7 @@ declare const __BRAND_NAME__: string;
 const init = async () => {
   await initI18n();
   await loadRuntimeConfig();
+  injectLanguageSwitcher();
   applyTranslations();
 
   if (isCurrentPageDisabled()) {

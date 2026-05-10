@@ -7,7 +7,10 @@
     "allTools": "All Tools",
     "docs": "Docs",
     "openMainMenu": "Open main menu",
-    "language": "Language"
+    "language": "Language",
+    "blog": "Blog",
+    "workflows": "Workflows",
+    "howItWorks": "How It Works"
   },
   "donation": {
     "message": "Love LocalPDFKit? Help us keep it free and open source!",
@@ -60,6 +63,49 @@
     "searchPlaceholder": "Search for a tool (e.g., 'split', 'organize'...)",
     "backToTools": "Back to Tools",
     "firstLoadNotice": "First load takes a moment as we download our conversion engine. After that, all loads will be instant."
+  },
+  "toolsDirectory": {
+    "title": "All PDF Tools Directory",
+    "subtitle": "Browse our PDF tools by category. Search by name or filter by common document workflows.",
+    "shortcutsEyebrow": "Task shortcuts",
+    "shortcutsTitle": "Browse tools by common workflow",
+    "shortcutsDescription": "If you are not sure which tool name to search for, start with a workflow and follow the linked tools and tutorials.",
+    "workflowShare": "Prepare a PDF to share",
+    "workflowOrganize": "Merge, split, and organize pages",
+    "workflowConvert": "Convert and extract content",
+    "workflowOcr": "OCR scanned documents",
+    "workflowImages": "Work with PDF images",
+    "workflowArchive": "Archive or repair PDFs",
+    "searchPlaceholder": "Search tools... (e.g., 'compress', 'convert to word', 'merge')",
+    "filters": {
+      "all": "All Tools",
+      "converters": "Converters",
+      "editors": "Editors",
+      "security": "Security",
+      "mergeSplit": "Merge & Split",
+      "other": "Other Tools"
+    },
+    "showing": "Showing",
+    "toolsSuffix": "tools",
+    "noResultsTitle": "No tools found",
+    "noResultsDescription": "Try adjusting your search or filter",
+    "browseDeeperEyebrow": "Browse deeper",
+    "browseDeeperTitle": "Continue from the directory into blog tutorials, category hubs, and policy pages",
+    "browseDeeperDescription": "These internal links help users choose the next page and strengthen the overall topical structure of the site.",
+    "links": {
+      "converterTitle": "PDF Converter hub",
+      "converterDescription": "Browse the conversion-focused category page with grouped tool links.",
+      "editorTitle": "PDF Editor hub",
+      "editorDescription": "Open the editing category for page cleanup, layout, and annotation tasks.",
+      "securityTitle": "PDF Security hub",
+      "securityDescription": "Review password, signature, permissions, and metadata tools.",
+      "mergeSplitTitle": "Merge & Split hub",
+      "mergeSplitDescription": "See the tool cluster for combining, reordering, and comparing PDFs.",
+      "blogTitle": "Blog Tutorials",
+      "blogDescription": "Find evergreen how-to content and troubleshooting articles that support informational search traffic.",
+      "privacyTitle": "Privacy & browser FAQ",
+      "privacyDescription": "Explain browser processing, privacy expectations, and support policies."
+    }
   },
   "upload": {
     "clickToSelect": "Click to select a file",
@@ -230,7 +276,15 @@
     "legal": "Legal",
     "termsAndConditions": "Terms and Conditions",
     "privacyPolicy": "Privacy Policy",
-    "followUs": "Follow Us"
+    "followUs": "Follow Us",
+    "tagline": "Browser-based PDF tools and practical English tutorials for everyday document work.",
+    "explore": "Explore",
+    "allTools": "All Tools",
+    "blog": "Blog",
+    "workflows": "Workflows",
+    "cookiePolicy": "Cookie Policy",
+    "disclaimer": "Disclaimer",
+    "sourceCode": "Source Code"
   },
   "merge": {
     "title": "Merge PDFs",
@@ -267,7 +321,17 @@
     "file": "File",
     "files": "Files",
     "close": "Close",
-    "convert": "Convert"
+    "convert": "Convert",
+    "uploadFile": "Upload File",
+    "uploadPdf": "Upload PDF",
+    "uploadPdfs": "Upload PDFs",
+    "uploadPdfFiles": "Upload PDF Files",
+    "process": "Process",
+    "downloadPdfs": "Download PDFs",
+    "viewResults": "View Results",
+    "autoConvert": "Auto Convert",
+    "selectCompressionLevel": "Select Compression Level",
+    "chooseCompressionLevel": "Choose Compression Level"
   },
   "about": {
     "hero": {
@@ -370,5 +434,17 @@
     "heading": "This tool has been disabled",
     "message": "This tool is not available in your deployment. Contact your administrator for more information.",
     "backHome": "Back to Home"
+  },
+  "aliases": {
+    "editPdf": "Edit PDF",
+    "organizePdf": "Organize PDF",
+    "pdfToDocx": "PDF to DOCX",
+    "txtToPdf": "TXT to PDF",
+    "textColor": "Text Color",
+    "uploadAndReview": "Upload & Review",
+    "chooseSignature": "Choose Signature",
+    "applySignature": "Apply Signature",
+    "selectCompressionLevel": "Select Compression Level",
+    "chooseCompressionLevel": "Choose Compression Level"
   }
 }

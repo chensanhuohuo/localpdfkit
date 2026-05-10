@@ -1,0 +1,452 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "contact": "联系",
+    "licensing": "授权",
+    "allTools": "全部工具",
+    "blog": "博客",
+    "workflows": "工作流",
+    "howItWorks": "工作原理",
+    "docs": "文档",
+    "openMainMenu": "打开主菜单",
+    "language": "语言"
+  },
+  "donation": {
+    "message": "喜欢 LocalPDFKit？帮助我们保持免费和开源！",
+    "button": "赞助"
+  },
+  "hero": {
+    "title": "一个",
+    "pdfToolkit": "PDF 工具箱",
+    "builtForPrivacy": "为隐私而生",
+    "noSignups": "无需注册",
+    "unlimitedUse": "不限次数",
+    "worksOffline": "可离线使用",
+    "startUsing": "立即开始"
+  },
+  "usedBy": {
+    "title": "被这些公司的用户使用"
+  },
+  "features": {
+    "title": "为什么选择",
+    "bentoPdf": "LocalPDFKit？",
+    "noSignup": {
+      "title": "无需注册",
+      "description": "打开即可使用，不需要账号或邮箱。"
+    },
+    "noUploads": {
+      "title": "减少上传",
+      "description": "核心工具设计为直接在浏览器中处理文件。"
+    },
+    "foreverFree": {
+      "title": "免费使用",
+      "description": "所有工具都可使用，没有试用限制或付费墙。"
+    },
+    "noLimits": {
+      "title": "灵活工作流",
+      "description": "可反复用于常见 PDF 处理任务。"
+    },
+    "batchProcessing": {
+      "title": "批量处理",
+      "description": "许多工作流支持多文件或页面级处理。"
+    },
+    "lightningFast": {
+      "title": "快速处理",
+      "description": "无需等待上传队列，常见任务可立即完成。"
+    }
+  },
+  "tools": {
+    "title": "开始使用",
+    "toolsLabel": "工具",
+    "subtitle": "点击工具即可打开文件上传器",
+    "searchPlaceholder": "搜索工具，例如 split、organize...",
+    "backToTools": "返回工具列表",
+    "firstLoadNotice": "首次加载需要下载转换引擎，之后会更快。"
+  },
+  "toolsDirectory": {
+    "title": "全部 PDF 工具目录",
+    "subtitle": "按类别浏览 PDF 工具。你可以按名称搜索，也可以按常见文档工作流筛选。",
+    "shortcutsEyebrow": "任务快捷入口",
+    "shortcutsTitle": "按常见工作流浏览工具",
+    "shortcutsDescription": "如果不确定该搜索哪个工具名称，可以先从工作流开始，再跟随相关工具和教程操作。",
+    "workflowShare": "准备要分享的 PDF",
+    "workflowOrganize": "合并、拆分和整理页面",
+    "workflowConvert": "转换和提取内容",
+    "workflowOcr": "OCR 识别扫描文档",
+    "workflowImages": "处理 PDF 图片",
+    "workflowArchive": "归档或修复 PDF",
+    "searchPlaceholder": "搜索工具...（例如：压缩、转 Word、合并）",
+    "filters": {
+      "all": "全部工具",
+      "converters": "转换工具",
+      "editors": "编辑工具",
+      "security": "安全工具",
+      "mergeSplit": "合并与拆分",
+      "other": "其他工具"
+    },
+    "showing": "正在显示",
+    "toolsSuffix": "个工具",
+    "noResultsTitle": "未找到工具",
+    "noResultsDescription": "请尝试调整搜索词或筛选条件",
+    "browseDeeperEyebrow": "继续深入浏览",
+    "browseDeeperTitle": "从工具目录继续进入教程、分类中心和政策页面",
+    "browseDeeperDescription": "这些内部链接可以帮助用户选择下一页，也能增强网站整体主题结构。",
+    "links": {
+      "converterTitle": "PDF 转换中心",
+      "converterDescription": "浏览以转换为核心的分类页面，查看分组后的工具链接。",
+      "editorTitle": "PDF 编辑中心",
+      "editorDescription": "打开编辑分类，处理页面清理、版式调整和批注任务。",
+      "securityTitle": "PDF 安全中心",
+      "securityDescription": "查看密码、签名、权限和元数据相关工具。",
+      "mergeSplitTitle": "合并与拆分中心",
+      "mergeSplitDescription": "查看用于合并、重新排序和比较 PDF 的工具集合。",
+      "blogTitle": "博客教程",
+      "blogDescription": "阅读长期有效的操作教程和故障排查文章，覆盖信息型搜索需求。",
+      "privacyTitle": "隐私与浏览器处理 FAQ",
+      "privacyDescription": "了解浏览器处理方式、隐私预期和支持政策。"
+    }
+  },
+  "upload": {
+    "clickToSelect": "点击选择文件",
+    "orDragAndDrop": "或拖放到这里",
+    "pdfOrImages": "PDF 或图片",
+    "filesNeverLeave": "核心任务基于浏览器处理，文件保留在你的设备上。",
+    "addMore": "添加更多文件",
+    "clearAll": "全部清除",
+    "clearFiles": "清除文件",
+    "hints": {
+      "singlePdf": "单个 PDF 文件",
+      "pdfFile": "PDF 文件",
+      "multiplePdfs2": "多个 PDF 文件（至少 2 个）",
+      "bmpImages": "BMP 图片",
+      "oneOrMorePdfs": "一个或多个 PDF 文件",
+      "pdfDocuments": "PDF 文档",
+      "oneOrMoreCsv": "一个或多个 CSV 文件",
+      "multiplePdfsSupported": "支持多个 PDF 文件",
+      "singleOrMultiplePdfs": "支持单个或多个 PDF 文件",
+      "singlePdfFile": "单个 PDF 文件",
+      "pdfWithForms": "包含表单字段的 PDF 文件",
+      "heicImages": "HEIC/HEIF 图片",
+      "jpgImages": "JPG、JPEG、JP2、JPX 图片",
+      "pdfsOrImages": "PDF 或图片",
+      "oneOrMoreOdt": "一个或多个 ODT 文件",
+      "singlePdfOnly": "仅支持单个 PDF 文件",
+      "pdfFiles": "PDF 文件",
+      "multiplePdfs": "多个 PDF 文件",
+      "pngImages": "PNG 图片",
+      "pdfFilesOneOrMore": "PDF 文件（一个或多个）",
+      "oneOrMoreRtf": "一个或多个 RTF 文件",
+      "svgGraphics": "SVG 图形",
+      "tiffImages": "TIFF 图片",
+      "webpImages": "WebP 图片"
+    }
+  },
+  "howItWorks": {
+    "title": "工作方式",
+    "step1": "点击或拖放文件开始",
+    "step2": "点击处理按钮启动任务",
+    "step3": "立即保存处理后的文件"
+  },
+  "relatedTools": {
+    "title": "相关 PDF 工具"
+  },
+  "loader": {
+    "processing": "处理中..."
+  },
+  "alert": {
+    "title": "提示",
+    "ok": "确定"
+  },
+  "preview": {
+    "title": "文档预览",
+    "downloadAsPdf": "下载为 PDF",
+    "close": "关闭"
+  },
+  "settings": {
+    "title": "设置",
+    "shortcuts": "快捷键",
+    "preferences": "偏好设置",
+    "displayPreferences": "显示偏好",
+    "searchShortcuts": "搜索快捷键...",
+    "shortcutsInfo": "按住按键即可设置快捷键，修改会自动保存。",
+    "shortcutsWarning": "请避免常见浏览器快捷键（Cmd/Ctrl+W、Cmd/Ctrl+T、Cmd/Ctrl+N 等），它们可能无法可靠工作。",
+    "import": "导入",
+    "export": "导出",
+    "resetToDefaults": "恢复默认",
+    "fullWidthMode": "全宽模式",
+    "fullWidthDescription": "所有工具使用完整屏幕宽度，而不是居中容器",
+    "settingsAutoSaved": "设置会自动保存",
+    "clickToSet": "点击设置",
+    "pressKeys": "按下快捷键...",
+    "compactMode": "紧凑模式",
+    "compactModeDescription": "减少工具界面的留白和间距",
+    "warnings": {
+      "alreadyInUse": "快捷键已被占用",
+      "assignedTo": "已分配给：",
+      "chooseDifferent": "请选择其他快捷键。",
+      "reserved": "保留快捷键警告",
+      "commonlyUsed": "通常用于：",
+      "unreliable": "此快捷键可能无法稳定工作，或与浏览器/系统行为冲突。",
+      "useAnyway": "仍然使用它吗？",
+      "resetTitle": "重置快捷键",
+      "resetMessage": "你确定要将所有快捷键重置为默认值吗？<br><br>此操作无法撤销。",
+      "importSuccessTitle": "导入成功",
+      "importSuccessMessage": "快捷键已成功导入！",
+      "importFailTitle": "导入失败",
+      "importFailMessage": "导入快捷键失败。文件格式无效。"
+    }
+  },
+  "warning": {
+    "title": "警告",
+    "cancel": "取消",
+    "proceed": "继续"
+  },
+  "compliance": {
+    "title": "你的数据不会离开设备",
+    "weKeep": "我们保护",
+    "yourInfoSafe": "你的信息安全",
+    "byFollowingStandards": "并遵循全球安全标准。",
+    "processingLocal": "所有处理都在你的设备本地完成。",
+    "gdpr": {
+      "title": "GDPR 合规",
+      "description": "保护欧盟个人数据和隐私。"
+    },
+    "ccpa": {
+      "title": "CCPA 合规",
+      "description": "赋予加州居民对个人信息收集、使用和共享的权利。"
+    },
+    "hipaa": {
+      "title": "HIPAA 合规",
+      "description": "为美国医疗体系中的敏感健康信息提供保护要求。"
+    }
+  },
+  "faq": {
+    "title": "常见",
+    "questions": "问题",
+    "sectionTitle": "常见问题",
+    "isFree": {
+      "question": "LocalPDFKit 真的免费吗？",
+      "answer": "是的。LocalPDFKit 的工具可以免费使用，核心浏览器端任务无需注册，也不会添加水印。"
+    },
+    "areFilesSecure": {
+      "question": "我的文件安全吗？在哪里处理？",
+      "answer": "核心工具设计为直接在浏览器中处理文件，因此常见 PDF 任务无需上传到我们的服务器。"
+    },
+    "platforms": {
+      "question": "支持 Mac、Windows 和手机吗？",
+      "answer": "支持。LocalPDFKit 运行在现代浏览器中，因此可用于 Windows、macOS、Linux、iOS 和 Android。"
+    },
+    "gdprCompliant": {
+      "question": "LocalPDFKit 符合 GDPR 吗？",
+      "answer": "LocalPDFKit 围绕浏览器端处理和清晰的政策页面设计。具体合规性可能取决于所在地、工具选择、浏览器设置和可选集成。"
+    },
+    "dataStorage": {
+      "question": "你们会存储或追踪我的文件吗？",
+      "answer": "核心文件操作设计为在浏览器会话中完成。LocalPDFKit 不会有意在应用服务器上存储浏览器端工具处理的文档内容。"
+    },
+    "different": {
+      "question": "LocalPDFKit 和其他 PDF 工具有何不同？",
+      "answer": "许多在线 PDF 服务依赖服务器端处理。LocalPDFKit 更专注于常见工作流的浏览器端工具，并清楚说明隐私、Cookie、广告和实际限制。"
+    },
+    "browserBased": {
+      "question": "浏览器端处理如何保护我？",
+      "answer": "浏览器端处理能减少常见 PDF 任务中不必要的文件传输。用户仍应在重要工作流中检查输出、浏览器设置和相关政策页面。"
+    },
+    "analytics": {
+      "question": "你们会用 Cookie 或分析工具追踪我吗？",
+      "answer": "LocalPDFKit 可能使用隐私友好的统计工具，未来也可能加入广告或同意管理工具。重大变更会反映在 Cookie 政策和隐私政策中。"
+    }
+  },
+  "testimonials": {
+    "title": "用户",
+    "users": "评价",
+    "say": ""
+  },
+  "support": {
+    "title": "喜欢这个项目？",
+    "description": "LocalPDFKit 是一个热情驱动的项目，目标是为所有人提供免费、私密、强大的 PDF 工具箱。如果它帮到了你，欢迎支持后续开发。",
+    "buyMeCoffee": "请我喝杯咖啡"
+  },
+  "footer": {
+    "copyright": "© 2026 LocalPDFKit. 保留所有权利。",
+    "version": "版本",
+    "company": "公司",
+    "aboutUs": "关于我们",
+    "faqLink": "FAQ",
+    "contactUs": "联系我们",
+    "legal": "法律",
+    "termsAndConditions": "条款与条件",
+    "privacyPolicy": "隐私政策",
+    "followUs": "关注我们",
+    "tagline": "基于浏览器的 PDF 工具和适合日常文档工作的实用教程。",
+    "explore": "探索",
+    "allTools": "全部工具",
+    "blog": "博客",
+    "workflows": "工作流",
+    "cookiePolicy": "Cookie 政策",
+    "disclaimer": "免责声明",
+    "sourceCode": "源代码"
+  },
+  "common": {
+    "page": "页面",
+    "pages": "页",
+    "of": "/",
+    "download": "下载",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "add": "添加",
+    "remove": "移除",
+    "loading": "加载中...",
+    "loadingPageCount": "正在加载页数...",
+    "error": "错误",
+    "success": "成功",
+    "file": "文件",
+    "files": "文件",
+    "close": "关闭",
+    "convert": "转换",
+    "uploadFile": "上传文件",
+    "uploadPdf": "上传 PDF",
+    "uploadPdfs": "上传 PDF",
+    "uploadPdfFiles": "上传 PDF 文件",
+    "process": "处理",
+    "downloadPdfs": "下载 PDF",
+    "viewResults": "查看结果",
+    "autoConvert": "自动转换",
+    "selectCompressionLevel": "选择压缩级别",
+    "chooseCompressionLevel": "选择压缩级别"
+  },
+  "about": {
+    "hero": {
+      "title": "我们相信 PDF 工具应该",
+      "subtitle": "快速、私密、免费。",
+      "noCompromises": "没有妥协。"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "description": "提供尊重隐私、无需付费的综合 PDF 工具箱。我们相信基础文档工具应该人人可用。"
+    },
+    "philosophy": {
+      "label": "核心理念",
+      "title": "隐私优先，始终如此。",
+      "description": "在数据被商品化的时代，我们选择不同的方式。LocalPDFKit 的工具尽可能在浏览器本地处理文件，让你的文档保持私密。"
+    },
+    "cta": {
+      "title": "准备开始了吗？",
+      "description": "体验隐私和性能带来的不同。",
+      "button": "探索全部工具"
+    },
+    "whyLocalPDFKit": {
+      "title": "为什么选择 LocalPDFKit？",
+      "speed": {
+        "title": "速度更快",
+        "description": "无需等待文件上传或下载到服务器。我们通过 WebAssembly 等现代 Web 技术直接在浏览器中处理文件，为所有工具提供更快的体验。"
+      },
+      "free": {
+        "title": "完全免费",
+        "description": "没有试用、订阅、隐藏费用，也没有被“高级版”功能卡住。我们认为强大的 PDF 工具应该像公共服务，而不是盈利工具。"
+      },
+      "noAccount": {
+        "title": "无需账号",
+        "description": "打开即可使用任何工具。我们不需要你的邮箱、密码或个人信息。工作流程应该顺畅且匿名。"
+      },
+      "openSource": {
+        "title": "开源精神",
+        "description": "基于透明原则构建。我们使用 PDF-lib 和 PDF.js 等优秀开源库，并相信社区协作能够让强大工具触手可及。"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "无论你有问题、反馈还是功能建议，我们都很愿意听到你的声音。",
+    "email": "你可以直接通过邮箱联系我们："
+  },
+  "licensing": {
+    "title": "授权",
+    "subtitle": "选择适合你的许可证。"
+  },
+  "multiTool": {
+    "uploadPdfs": "上传 PDF",
+    "upload": "上传",
+    "addBlankPage": "添加空白页",
+    "edit": "编辑：",
+    "undo": "撤销",
+    "redo": "重做",
+    "reset": "重置",
+    "selection": "选择：",
+    "selectAll": "全选",
+    "deselectAll": "取消全选",
+    "rotate": "旋转：",
+    "rotateLeft": "左转",
+    "rotateRight": "右转",
+    "transform": "转换：",
+    "duplicate": "复制",
+    "split": "拆分",
+    "clear": "清除：",
+    "download": "下载：",
+    "downloadSelected": "下载选中",
+    "exportPdf": "导出 PDF",
+    "selectFiles": "选择文件",
+    "renderingPages": "正在渲染页面...",
+    "pleaseWait": "请稍候",
+    "error": "错误",
+    "failedToLoad": "加载失败",
+    "delete": "删除",
+    "uploadPdfFiles": "选择 PDF 文件",
+    "dragAndDrop": "将 PDF 文件拖放到这里，或点击选择",
+    "actions": {
+      "duplicatePage": "复制此页",
+      "deletePage": "删除此页",
+      "insertPdf": "在此页后插入 PDF",
+      "toggleSplit": "切换此页后的拆分"
+    },
+    "pagesRendering": "页面正在渲染...",
+    "noPagesSelected": "未选择页面",
+    "selectOnePage": "请至少选择一页进行下载。",
+    "noPages": "没有页面",
+    "noPagesToExport": "没有可导出的页面。",
+    "renderingTitle": "页面预览渲染中",
+    "errorRendering": "页面缩略图渲染失败"
+  },
+  "simpleMode": {
+    "title": "PDF 工具",
+    "subtitle": "选择一个工具开始"
+  },
+  "disabledTool": {
+    "title": "工具不可用",
+    "heading": "此工具已被禁用",
+    "message": "此部署中该工具不可用。请联系管理员了解更多信息。",
+    "backHome": "返回首页"
+  },
+  "merge": {
+    "title": "合并 PDF",
+    "description": "合并整份文件，或选择特定页面合并为新文档。",
+    "fileMode": "文件模式",
+    "pageMode": "页面模式",
+    "howItWorks": "使用方法：",
+    "fileModeInstructions": [
+      "???????????????",
+      "???????Pages?????????????????1-3, 5??????????",
+      "???Pages????????????????"
+    ],
+    "pageModeInstructions": [
+      "?? PDF ?????????????",
+      "?????????????????????????"
+    ],
+    "mergePdfs": "合并 PDF"
+  },
+  "aliases": {
+    "editPdf": "编辑 PDF",
+    "organizePdf": "整理 PDF",
+    "pdfToDocx": "PDF 转 DOCX",
+    "txtToPdf": "TXT 转 PDF",
+    "textColor": "文本颜色",
+    "uploadAndReview": "上传并检查",
+    "chooseSignature": "选择签名",
+    "applySignature": "应用签名",
+    "selectCompressionLevel": "选择压缩级别",
+    "chooseCompressionLevel": "选择压缩级别"
+  }
+}
