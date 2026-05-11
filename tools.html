@@ -72,12 +72,9 @@
     <section class="container mx-auto px-4 py-12">
       <div class="max-w-4xl mx-auto text-center">
         <h1 class="text-3xl md:text-5xl font-bold text-white mb-6">
-          <span data-i18n="toolsDirectory.title">All PDF Tools Directory</span>
+          All PDF Tools Directory
         </h1>
-        <p
-          class="text-lg text-gray-300 mb-8"
-          data-i18n="toolsDirectory.subtitle"
-        >
+        <p class="text-lg text-gray-300 mb-8">
           Browse our PDF tools by category. Search by name or filter by common
           document workflows.
         </p>
@@ -88,22 +85,13 @@
     <section class="container mx-auto px-4 pb-10">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-8">
-          <p
-            class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-3"
-            data-i18n="toolsDirectory.shortcutsEyebrow"
-          >
+          <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-3">
             Task shortcuts
           </p>
-          <h2
-            class="text-2xl md:text-3xl font-bold text-white mb-3"
-            data-i18n="toolsDirectory.shortcutsTitle"
-          >
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
             Browse tools by common workflow
           </h2>
-          <p
-            class="text-gray-400 max-w-3xl mx-auto"
-            data-i18n="toolsDirectory.shortcutsDescription"
-          >
+          <p class="text-gray-400 max-w-3xl mx-auto">
             If you are not sure which tool name to search for, start with a
             workflow and follow the linked tools and tutorials.
           </p>
@@ -111,34 +99,22 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           <a href="/workflows#share-a-pdf" class="workflow-link">
-            <span data-i18n="toolsDirectory.workflowShare"
-              >Prepare a PDF to share</span
-            >
+            Prepare a PDF to share
           </a>
           <a href="/workflows#combine-and-reorder" class="workflow-link">
-            <span data-i18n="toolsDirectory.workflowOrganize"
-              >Merge, split, and organize pages</span
-            >
+            Merge, split, and organize pages
           </a>
           <a href="/workflows#convert-and-extract" class="workflow-link">
-            <span data-i18n="toolsDirectory.workflowConvert"
-              >Convert and extract content</span
-            >
+            Convert and extract content
           </a>
           <a href="/workflows#scan-and-ocr" class="workflow-link">
-            <span data-i18n="toolsDirectory.workflowOcr"
-              >OCR scanned documents</span
-            >
+            OCR scanned documents
           </a>
           <a href="/workflows#image-workflows" class="workflow-link">
-            <span data-i18n="toolsDirectory.workflowImages"
-              >Work with PDF images</span
-            >
+            Work with PDF images
           </a>
           <a href="/workflows#archive-repair" class="workflow-link">
-            <span data-i18n="toolsDirectory.workflowArchive"
-              >Archive or repair PDFs</span
-            >
+            Archive or repair PDFs
           </a>
         </div>
       </div>
@@ -157,7 +133,6 @@
               type="text"
               id="search-input"
               placeholder="Search tools... (e.g., 'compress', 'convert to word', 'merge')"
-              data-i18n-placeholder="toolsDirectory.searchPlaceholder"
               class="w-full bg-gray-800 border border-gray-700 text-white rounded-lg pl-12 pr-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
@@ -166,42 +141,36 @@
         <!-- Category Filters -->
         <div class="flex flex-wrap gap-3 mb-6">
           <button class="category-filter active" data-category="all">
-            <span data-i18n="toolsDirectory.filters.all">All Tools</span>
+            All Tools
             <span class="ml-1 text-xs opacity-75" id="count-all">103</span>
           </button>
           <button class="category-filter" data-category="converter">
-            <span data-i18n="toolsDirectory.filters.converters"
-              >Converters</span
-            >
+            Converters
             <span class="ml-1 text-xs opacity-75" id="count-converter">47</span>
           </button>
           <button class="category-filter" data-category="editor">
-            <span data-i18n="toolsDirectory.filters.editors">Editors</span>
+            Editors
             <span class="ml-1 text-xs opacity-75" id="count-editor">23</span>
           </button>
           <button class="category-filter" data-category="security">
-            <span data-i18n="toolsDirectory.filters.security">Security</span>
+            Security
             <span class="ml-1 text-xs opacity-75" id="count-security">10</span>
           </button>
           <button class="category-filter" data-category="merge-split">
-            <span data-i18n="toolsDirectory.filters.mergeSplit"
-              >Merge & Split</span
-            >
+            Merge & Split
             <span class="ml-1 text-xs opacity-75" id="count-merge-split"
               >12</span
             >
           </button>
           <button class="category-filter" data-category="other">
-            <span data-i18n="toolsDirectory.filters.other">Other Tools</span>
+            Other Tools
             <span class="ml-1 text-xs opacity-75" id="count-other">11</span>
           </button>
         </div>
 
         <!-- Results Count -->
         <div class="text-gray-400 text-sm mb-4">
-          <span data-i18n="toolsDirectory.showing">Showing</span>
-          <span id="results-count">103</span>
-          <span data-i18n="toolsDirectory.toolsSuffix">tools</span>
+          Showing <span id="results-count">103</span> tools
         </div>
       </div>
     </section>
@@ -218,18 +187,8 @@
           <i
             class="ph ph-magnifying-glass-minus text-6xl text-gray-600 mx-auto mb-4"
           ></i>
-          <h3
-            class="text-xl font-semibold text-white mb-2"
-            data-i18n="toolsDirectory.noResultsTitle"
-          >
-            No tools found
-          </h3>
-          <p
-            class="text-gray-400"
-            data-i18n="toolsDirectory.noResultsDescription"
-          >
-            Try adjusting your search or filter
-          </p>
+          <h3 class="text-xl font-semibold text-white mb-2">No tools found</h3>
+          <p class="text-gray-400">Try adjusting your search or filter</p>
         </div>
       </div>
     </section>
@@ -237,23 +196,14 @@
     <section class="container mx-auto px-4 pb-12">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-8">
-          <p
-            class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-3"
-            data-i18n="toolsDirectory.browseDeeperEyebrow"
-          >
+          <p class="text-sm uppercase tracking-[0.3em] text-indigo-300 mb-3">
             Browse deeper
           </p>
-          <h2
-            class="text-2xl md:text-3xl font-bold text-white mb-3"
-            data-i18n="toolsDirectory.browseDeeperTitle"
-          >
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
             Continue from the directory into blog tutorials, category hubs, and
             policy pages
           </h2>
-          <p
-            class="text-gray-400 max-w-3xl mx-auto"
-            data-i18n="toolsDirectory.browseDeeperDescription"
-          >
+          <p class="text-gray-400 max-w-3xl mx-auto">
             These internal links help users choose the next page and strengthen
             the overall topical structure of the site.
           </p>
@@ -261,46 +211,36 @@
 
         <div class="inline-link-grid">
           <a href="/pdf-converter" class="inline-link-card">
-            <strong data-i18n="toolsDirectory.links.converterTitle"
-              >PDF Converter hub</strong
-            >
-            <span data-i18n="toolsDirectory.links.converterDescription"
+            <strong>PDF Converter hub</strong>
+            <span
               >Browse the conversion-focused category page with grouped tool
               links.</span
             >
           </a>
           <a href="/pdf-editor" class="inline-link-card">
-            <strong data-i18n="toolsDirectory.links.editorTitle"
-              >PDF Editor hub</strong
-            >
-            <span data-i18n="toolsDirectory.links.editorDescription"
+            <strong>PDF Editor hub</strong>
+            <span
               >Open the editing category for page cleanup, layout, and
               annotation tasks.</span
             >
           </a>
           <a href="/pdf-security" class="inline-link-card">
-            <strong data-i18n="toolsDirectory.links.securityTitle"
-              >PDF Security hub</strong
-            >
-            <span data-i18n="toolsDirectory.links.securityDescription"
+            <strong>PDF Security hub</strong>
+            <span
               >Review password, signature, permissions, and metadata
               tools.</span
             >
           </a>
           <a href="/pdf-merge-split" class="inline-link-card">
-            <strong data-i18n="toolsDirectory.links.mergeSplitTitle"
-              >Merge & Split hub</strong
-            >
-            <span data-i18n="toolsDirectory.links.mergeSplitDescription"
+            <strong>Merge & Split hub</strong>
+            <span
               >See the tool cluster for combining, reordering, and comparing
               PDFs.</span
             >
           </a>
           <a href="/blog" class="inline-link-card">
-            <strong data-i18n="toolsDirectory.links.blogTitle"
-              >Blog Tutorials</strong
-            >
-            <span data-i18n="toolsDirectory.links.blogDescription"
+            <strong>Blog Tutorials</strong>
+            <span
               >Find evergreen how-to content and troubleshooting articles that
               support informational search traffic.</span
             >
@@ -309,10 +249,8 @@
             href="/pdf-privacy-and-browser-processing-faq"
             class="inline-link-card"
           >
-            <strong data-i18n="toolsDirectory.links.privacyTitle"
-              >Privacy & browser FAQ</strong
-            >
-            <span data-i18n="toolsDirectory.links.privacyDescription"
+            <strong>Privacy & browser FAQ</strong>
+            <span
               >Explain browser processing, privacy expectations, and support
               policies.</span
             >
@@ -325,8 +263,6 @@
     {{> footer }}
 
     <script type="module" src="/src/js/utils/lucide-init.ts"></script>
-    <script type="module" src="/src/js/mobileMenu.ts"></script>
-    <script type="module" src="/src/js/main.ts"></script>
     <script type="module">
       const tools = [
         // Converters
